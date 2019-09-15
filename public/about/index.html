@@ -13,11 +13,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="dns-prefetch" href="//kit.fontawesome.com">
-  	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+	<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+	<link rel="dns-prefetch" href="code.jquery.com">
+	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css" integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" media="print" onload="this.media='all'">
 	<link rel="icon" href="assets/favicon.ico">
-	<script async src="https://kit.fontawesome.com/a4e6fa9fb0.js"></script>
 	<meta property="og:title" content="🍳 yude.moe" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://yude.moe" />
@@ -50,7 +51,21 @@
        url('../assets/fonts/roboto-mono-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../assets/fonts/roboto-mono-v7-latin-regular.svg#RobotoMono') format('svg'); /* Legacy iOS */
 }
-		body{font-family:'Roboto Mono',"Noto Sans JP"}
+@font-face {
+     font-family: 'Font Awesome 5 Brands';
+     font-style: normal;
+     font-weight: 400;
+     src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-brands-400.woff2") format("woff2");
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'Font Awesome 5 Free';
+     font-style: normal;
+     font-weight: 900;
+     src:url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-solid-900.woff2") format("woff2");
+     font-display: swap;
+ }
+		body{font-family:'Font Awesome 5 Brands','Font Awesome 5 Free','Roboto Mono',"Noto Sans JP"}
 		canvas{ display: block;}
 		a{color:#262a2f}
 		#particles-js {

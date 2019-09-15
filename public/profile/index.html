@@ -11,12 +11,13 @@
 </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="dns-prefetch" href="//kit.fontawesome.com">
-  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+	<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+	<link rel="dns-prefetch" href="code.jquery.com">
+	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>👤 プロフィール | yude.moe</title>
   <link rel="icon" href="../assets/favicon.ico">
-  <script async src="https://kit.fontawesome.com/a4e6fa9fb0.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css" integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" media="print" onload="this.media='all'"/>
   <meta property="og:title" content="👤 プロフィール | yude.moe" />
@@ -55,8 +56,22 @@
        url('../assets/fonts/roboto-mono-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../assets/fonts/roboto-mono-v7-latin-regular.svg#RobotoMono') format('svg'); /* Legacy iOS */
 }
+@font-face {
+     font-family: 'Font Awesome 5 Brands';
+     font-style: normal;
+     font-weight: 400;
+     src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-brands-400.woff2") format("woff2");
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'Font Awesome 5 Free';
+     font-style: normal;
+     font-weight: 900;
+     src:url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-solid-900.woff2") format("woff2");
+     font-display: swap;
+ }
   body,h2,a{
-    font-family: 'Roboto Mono',"Noto Sans JP";
+    font-family: 'Font Awesome 5 Brands','Font Awesome 5 Free','Roboto Mono',"Noto Sans JP";
     user-select:none;
     -webkit-user-select:none;
     -ms-user-select: none;
@@ -116,7 +131,7 @@
         <div class="card-body">
           <img src="../assets/mel-full.jpg" alt="yude's avatar" style="border-radius: 10px;margin-bottom:10px;height:100px;width:100px">
           <p style="font-family: 'Morning Star';font-size: 400%;background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;letter-spacing: 1px">yude</p>
-      <p style="font-size:140%;color:#AAB1B0;font-family:'Roboto Mono'"><i class="fas fa-birthday-cake"></i> <strong>November, 19th</strong></p><p style="font-size:140%;color:#AAB1B0;font-family:'Roboto Mono';margin-top: -14px"><i class="fas fa-map-marker-alt"></i> <strong>Tottori, Japan</strong></p>
+      <p style="font-size:140%;color:#AAB1B0"><i class="fas fa-birthday-cake"></i> <strong>November, 19th</strong></p><p style="font-size:140%;color:#AAB1B0;margin-top: -14px"><i class="fas fa-map-marker-alt"></i> <strong>Tottori, Japan</strong></p>
     </div>
       </div>
       <div class="card" style="background-color: #31353F;margin-top: 10px">
@@ -419,6 +434,26 @@
                     <h3 class="hvr-bounce-in"><i class="fab fa-mastodon"></i></h3>
                     <p><a href="https://mast.moe/@yude">mast.moe/<br>@yude</a></p>
                   </div>
+                  <div class="box">
+                      <h3 class="hvr-bounce-in"><img alt="ニジエ"" src="../assets/brand/nijie.png" height=30px width=30px></h3>
+                      <p><a href="https://nijie.info/members.php?id=1390736">yude (1390736)</a></p>
+                    </div>
+                    <div class="box">
+                        <h3 class="hvr-bounce-in"><img alt="Smashcast"" src="../assets/brand/smashcast.png" height=30px width=30px></h3>
+                        <p><a href="https://www.smashcast.tv/yude">yude</a></p>
+                      </div>
+                      <div class="box">
+                          <h3 class="hvr-bounce-in"><img alt="Irori"" src="../assets/brand/irori.svg" height=30px width=30px></h3>
+                          <p><a href="https://irori.app/@yude">@yude</a></p>
+                        </div>
+                        <div class="box">
+                            <h3 class="hvr-bounce-in"><img alt="Iwara"" src="../assets/brand/iwara.ico" height=30px width=30px></h3>
+                            <p><a href="https://www.iwara.tv/users/yude">yude</a></p>
+                          </div>
+                          <div class="box">
+                              <h3 class="hvr-bounce-in"><img alt="Chordify"" src="../assets/brand/chordify.webp" height=30px width=30px></h3>
+                              <p><a href="https://chordify.net/profile/5d57fef4786de0450000db60">yude</a></p>
+                            </div>
           </div>
         </div>
       </div>
