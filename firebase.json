@@ -20,7 +20,7 @@
     } ]
   },
   {
-    "source" : "**/*.@(webp|woff2)",
+    "source" : "**/*.@(webp|woff2|js|css)",
   "headers" : [ {
     "key" : "Cache-Control",
     "value" : "max-age=31536000,public"
