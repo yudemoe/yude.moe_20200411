@@ -25,7 +25,24 @@
     "key" : "Cache-Control",
     "value" : "max-age=31536000,public"
   } ]
+},
+{
+  "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+  "headers" : [ {
+    "key" : "Access-Control-Allow-Origin",
+    "value" : "*"
+  }
+]
 }
+,
+  {
+    "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+    "headers" : [ {
+      "key" : "Access-Control-Allow-Headers",
+      "value" : "Origin, X-Requested-With, Content-Type, Accept"
+    }
+]
+  }
 ]
   }
 }
