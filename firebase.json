@@ -27,7 +27,7 @@
   } ]
 },
 {
-  "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+  "source" : "**/*.@(eot|otf|ttf|ttc|woff|woff2|font.css)",
   "headers" : [ {
     "key" : "Access-Control-Allow-Origin",
     "value" : "*"
@@ -36,7 +36,7 @@
 }
 ,
   {
-    "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+    "source" : "**/*.@(eot|otf|ttf|ttc|woff|woff2|font.css)",
     "headers" : [ {
       "key" : "Access-Control-Allow-Headers",
       "value" : "Origin, X-Requested-With, Content-Type, Accept"
