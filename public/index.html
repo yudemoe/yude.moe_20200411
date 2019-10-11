@@ -1,25 +1,38 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-117103073-1');
-</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-117103073-1');
+	</script>
 	<title>🍳 yude.moe</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
-	<link rel="dns-prefetch" href="code.jquery.com">
+	<link rel="dns-prefetch" href="//code.jquery.com">
 	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" media="print" onload="this.media='all'">
-	<link rel="icon" href="assets/favicon.ico">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" media="print" onload="this.media='all'"/>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css"
+		integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print"
+		onload="this.media='all'" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
+		media="print" onload="this.media='all'" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+		integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" media="print"
+		onload="this.media='all'" />
 	<meta property="og:title" content="🍳 yude.moe" />
 	<meta property="og:type" content="website" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css" integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print" onload="this.media='all'" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css"
+		integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print"
+		onload="this.media='all'" />
 	<meta property="og:url" content="https://yude.moe" />
 	<meta property="og:image" content="https://yude.moe/assets/mel-full.jpg" />
 	<meta property="og:description" content="🍳 yude.moe トップページ | Front page of yude.moe" />
@@ -27,116 +40,128 @@
 	<meta name="twitter:site" content="@tamago_server" />
 	<style>
 		.fa-svg svg {
-  height: 9rem;
-  max-width: 9.5rem;
-}
-.fa-svg path {
-  fill: #fff;
-}
-@font-face {
-  font-family: 'Noto Sans JP';
-  font-style: normal;
-  font-weight: 400;
-  src: url('assets/fonts/noto-sans-jp-v24-japanese-regular.eot'); /* IE9 Compat Modes */
-  src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'),
-       url('assets/fonts/noto-sans-jp-v24-japanese-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('assets/fonts/noto-sans-jp-v24-japanese-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('assets/fonts/noto-sans-jp-v24-japanese-regular.woff') format('woff'), /* Modern Browsers */
-       url('assets/fonts/noto-sans-jp-v24-japanese-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('assets/fonts/noto-sans-jp-v24-japanese-regular.svg#NotoSansJP') format('svg'); /* Legacy iOS */
-	   font-display: swap;
-}
-@font-face {
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/roboto-mono-v7-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Roboto Mono'), local('RobotoMono-Regular'),
-       url('assets/fonts/roboto-mono-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('assets/fonts/roboto-mono-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('assets/fonts/roboto-mono-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('assets/fonts/roboto-mono-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('assets/fonts/roboto-mono-v7-latin-regular.svg#RobotoMono') format('svg'); /* Legacy iOS */
-	   font-display: swap;
-}
-@font-face {
-     font-family: 'Font Awesome 5 Brands';
-     font-style: normal;
-     font-weight: 400;
-     src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-brands-400.woff2") format("woff2");
-     font-display: swap;
- }
- @font-face {
-     font-family: 'Font Awesome 5 Free';
-     font-style: normal;
-     font-weight: 900;
-     src:url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-solid-900.woff2") format("woff2");
-     font-display: swap;
- }
-		body{font-family:'Font Awesome 5 Brands','Font Awesome 5 Free','Roboto Mono',"Noto Sans JP"}
-		canvas{ display: block;}
+			height: 9rem;
+			max-width: 9.5rem;
+		}
+
+		.fa-svg path {
+			fill: #fff;
+		}
+
+		@font-face {
+			font-family: 'Font Awesome 5 Brands';
+			font-style: normal;
+			font-weight: 400;
+			src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-brands-400.woff2") format("woff2");
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Font Awesome 5 Free';
+			font-style: normal;
+			font-weight: 900;
+			src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-solid-900.woff2") format("woff2");
+			font-display: swap;
+		}
+
+		body {
+			font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Roboto Mono', "Noto Sans JP"
+		}
+
+		canvas {
+			display: block;
+		}
+
 		#particles-js {
 			background-color: #262a2f;
-			position:fixed;
-			top:0;
-			right:0;
-			bottom:0;
-			left:0;
-			z-index:0;
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 0;
 		}
+
 		#overlay {
 			position: relative;
 		}
-		.text{
+
+		.text {
 			position: absolute;
 			right: 5px;
 			bottom: 10px;
 			font-size: 20px;
 			line-height: 130%;
 		}
-		.bg{background-image: url("assets/marisa_2x.webp");background-repeat: no-repeat;}
+
+		.bg {
+			background-image: url("assets/marisa_2x.webp");
+			background-repeat: no-repeat;
+		}
+
 		.fa-svg svg {
-  height: 18px;
-  max-width: 20px;
-  
-}
-.fa-svg path {
-  fill: #262a2f;
-}
+			height: 18px;
+			max-width: 20px;
+
+		}
+
+		.fa-svg path {
+			fill: #262a2f;
+		}
 	</style>
 </head>
+
 <body>
 	<div id="particles-js"></div>
 	<div id="overlay" class="container" style="text-align:center">
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
-					<li class="breadcrumb-item active" aria-current="page"><i class="fas fa-home"></i> yude.moe</li>
+				<li class="breadcrumb-item active" aria-current="page"><i class="fas fa-home"></i> yude.moe</li>
 			</ol>
 		</nav>
 		<div style="position:relative;pointer-events:auto">
 			<div class="card bg">
 				<div class="card-body">
-				<h5 class="card-title animated infinite rubberBand" style="text-shadow:4px 4px 3px; color: #FF9819"><strong>yude.moe へようこそ!</strong></h5>
-				<h6 class="card-subtitle mb-2 text-muted">Welcome to yude.moe!</h6>
-				<a href="profile" class="card-link" style="display: inline-block;color:#20363F"><i class="fas fa-user"></i> プロフィール</a>
-				<a href="https://blog.yude.moe" class="card-link" style="display: inline-block;color:#20363F"><i class="fas fa-blog"></i> ブログ</a>
-				<a href="donate" class="card-link" style="display: inline-block;color:#20363F"><i class="fas fa-heart"></i> 寄付</a>
-				<a href="banner/" class="card-link" style="display: inline-block;color:#20363F"><i class="fas fa-link"></i> 相互リンク</a>
-				<hr>
-				<a href="https://cloud.yude.moe" class="card-link" style="display: inline-block;color:#20363F"><i class="fas fa-cloud"></i> Nextcloud</a>
-				<a href="https://github.com/yudemoe" class="card-link" style="display: inline-block;color:#20363F"><i class="fab fa-github"></i> GitHub</a>
-				<a href="https://discord.gg/X6srY7X" class="card-link" style="display: inline-block;color:#20363F"><i class="fab fa-discord"></i> Discord</a>
+					<h5 class="card-title animated infinite rubberBand" style="text-shadow:4px 4px 3px; color: #FF9819">
+						<strong>yude.moe へようこそ!</strong></h5>
+					<h6 class="card-subtitle mb-2 text-muted">Welcome to yude.moe!</h6>
+					<a href="profile" class="card-link" style="display: inline-block;color:#20363F"><i
+							class="fas fa-user"></i> プロフィール</a>
+					<a href="https://blog.yude.moe" class="card-link" style="display: inline-block;color:#20363F"><i
+							class="fas fa-blog"></i> ブログ</a>
+					<a href="donate" class="card-link" style="display: inline-block;color:#20363F"><i
+							class="fas fa-heart"></i> 寄付</a>
+					<a href="banner/" class="card-link" style="display: inline-block;color:#20363F"><i
+							class="fas fa-link"></i> 相互リンク</a>
+					<hr>
+					<a href="https://cloud.yude.moe" class="card-link" style="display: inline-block;color:#20363F"><i
+							class="fas fa-cloud"></i> Nextcloud</a>
+					<a href="https://github.com/yudemoe" class="card-link"
+						style="display: inline-block;color:#20363F"><i class="fab fa-github"></i> GitHub</a>
+					<a href="https://discord.gg/X6srY7X" class="card-link"
+						style="display: inline-block;color:#20363F"><i class="fab fa-discord"></i> Discord</a>
 				</div>
-				<span style="text-align:right">Background by <a style="color:#20363F" href="https://twitter.com/hikaru_riv"><i class="fab fa-twitter"></i> @hikaru_riv</a>. Thanks!</span>
-				</div>
-				<div class="mx-auto" style="width:90%;margin-top:5%;text-align:center">
-						<hr>
-						<p style="color: gray; font-family: 'Roboto Mono'"><span style="display: inline-block">Made by <a style="color:black" href="https://twitter.com/yudete">yude</a>.</span> | <a href="about"><span style="display: inline-block;color:black">About yude.moe</span></a></p>
-					</div>
-				</div>
+				<span style="text-align:right">Background by <a style="color:#20363F"
+						href="https://twitter.com/hikaru_riv"><i class="fab fa-twitter"></i> @hikaru_riv</a>.
+					Thanks!</span>
 			</div>
-			<script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-			<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-			<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		</body>
-		</html>
+			<div class="mx-auto" style="width:90%;margin-top:5%;text-align:center">
+				<hr>
+				<p style="color: gray; font-family: 'Roboto Mono'"><span style="display: inline-block">Made by <a
+							style="color:black" href="https://twitter.com/yudete">yude</a>.</span> | <a
+						href="about"><span style="display: inline-block;color:black">About yude.moe</span></a></p>
+			</div>
+		</div>
+	</div>
+	<script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>

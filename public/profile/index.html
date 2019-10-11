@@ -1,140 +1,163 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117103073-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-117103073-1');
-</script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117103073-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-117103073-1');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
-	<link rel="dns-prefetch" href="code.jquery.com">
-	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+  <link rel="dns-prefetch" href="code.jquery.com">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>👤 プロフィール | yude.moe</title>
   <link rel="icon" href="../assets/favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css" integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" media="print" onload="this.media='all'"/>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css"
+    integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print"
+    onload="this.media='all'" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
+    media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" media="print"
+    onload="this.media='all'" />
   <meta property="og:title" content="👤 プロフィール | yude.moe" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://yude.moe/profile" />
-	<meta property="og:image" content="https://yude.moe/assets/mel-full.jpg" />
-	<meta property="og:description" content="👤 yude のプロフィールページ | Who is yude?" />
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-6396126208276090",
-    enable_page_level_ads: true
-  });
-</script>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yude.moe/profile" />
+  <meta property="og:image" content="https://yude.moe/assets/mel-full.jpg" />
+  <meta property="og:description" content="👤 yude のプロフィールページ | Who is yude?" />
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-6396126208276090",
+      enable_page_level_ads: true
+    });
+  </script>
   <style>
-    		@font-face {
-  font-family: 'Noto Sans JP';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../assets/fonts/noto-sans-jp-v24-japanese-regular.eot'); /* IE9 Compat Modes */
-  src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'),
-       url('../assets/fonts/noto-sans-jp-v24-japanese-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/noto-sans-jp-v24-japanese-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/noto-sans-jp-v24-japanese-regular.woff') format('woff'), /* Modern Browsers */
-       url('../assets/fonts/noto-sans-jp-v24-japanese-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/noto-sans-jp-v24-japanese-regular.svg#NotoSansJP') format('svg'); /* Legacy iOS */
-       font-display: swap;
-}
-@font-face {
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../assets/fonts/roboto-mono-v7-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Roboto Mono'), local('RobotoMono-Regular'),
-       url('../assets/fonts/roboto-mono-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/roboto-mono-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/roboto-mono-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../assets/fonts/roboto-mono-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/roboto-mono-v7-latin-regular.svg#RobotoMono') format('svg'); /* Legacy iOS */
-       font-display: swap;
-}
-@font-face {
-     font-family: 'Font Awesome 5 Brands';
-     font-style: normal;
-     font-weight: 400;
-     src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-brands-400.woff2") format("woff2");
-     font-display: swap;
- }
- @font-face {
-     font-family: 'Font Awesome 5 Free';
-     font-style: normal;
-     font-weight: 900;
-     src:url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-solid-900.woff2") format("woff2");
-     font-display: swap;
- }
-  body,h2,a{
-    font-family: 'Font Awesome 5 Brands','Font Awesome 5 Free','Roboto Mono',"Noto Sans JP";
-    user-select:none;
-    -webkit-user-select:none;
-    -ms-user-select: none;
-    -moz-user-select:none;
-    -khtml-user-select:none;
-    -webkit-user-drag:none;
-    -khtml-user-drag:none;
-  }
-  #particles-js {
-    background-color: #262a2f;
-    position:fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    z-index:0;
-  }
-  @font-face {
-	font-family: 'Morning Star';
-	src:local('Morning Star') ,
-		url('MorningStar.ttf');
-}
-  #overlay {
-    position: relative;
-  }
-  a:link { color: #778899; }
-  a:visited { color: #778899; }
-  a:hover { color: #778899; }
-  a:active { color: #778899; }
-  code {font-size: 20px;}
-  .row{text-align:center;}
-  .box{
-    width: 100px;
-    margin:0;
+    @font-face {
+      font-family: 'Font Awesome 5 Brands';
+      font-style: normal;
+      font-weight: 400;
+      src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-brands-400.woff2") format("woff2");
+      font-display: swap;
+    }
 
-     display:inline-block;
-  }
-  button.dayo{
-    background-color: #0F96AA;
-    color: #E1E1E1;
-  }
-  .hvr-bounce-in{color:#CAB1FF}
+    @font-face {
+      font-family: 'Font Awesome 5 Free';
+      font-style: normal;
+      font-weight: 900;
+      src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-solid-900.woff2") format("woff2");
+      font-display: swap;
+    }
+
+    body,
+    h2,
+    a {
+      font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Roboto Mono', "Noto Sans JP";
+      user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-drag: none;
+      -khtml-user-drag: none;
+    }
+
+    #particles-js {
+      background-color: #262a2f;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    @font-face {
+      font-family: 'Morning Star';
+      src: local('Morning Star'),
+        url('MorningStar.ttf');
+    }
+
+    #overlay {
+      position: relative;
+    }
+
+    a:link {
+      color: #778899;
+    }
+
+    a:visited {
+      color: #778899;
+    }
+
+    a:hover {
+      color: #778899;
+    }
+
+    a:active {
+      color: #778899;
+    }
+
+    code {
+      font-size: 20px;
+    }
+
+    .row {
+      text-align: center;
+    }
+
+    .box {
+      width: 100px;
+      margin: 0;
+
+      display: inline-block;
+    }
+
+    button.dayo {
+      background-color: #0F96AA;
+      color: #E1E1E1;
+    }
+
+    .hvr-bounce-in {
+      color: #CAB1FF
+    }
   </style>
 </head>
+
 <body>
   <div id="particles-js"></div>
   <div id="overlay">
     <div style="text-align: center" class="container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item" aria-current="page"><a href="../" style="color:#778899"><i class="fas fa-home"></i> yude.moe</a></li>
+          <li class="breadcrumb-item" aria-current="page"><a href="../" style="color:#778899"><i
+                class="fas fa-home"></i> yude.moe</a></li>
           <li class="breadcrumb-item active" aria-current="page"><i class="fas fa-user"></i> プロフィール</li>
         </ol>
       </nav>
       <h4 class="animated infinite bounce delay-1s" style="color: white; font-family: 'Roboto Mono'">yude's profile</h4>
       <div class="card" style="background-color: #31353F">
         <div class="card-body">
-          <img src="../assets/mel-full.jpg" alt="yude's avatar" style="border-radius: 10px;margin-bottom:10px;height:100px;width:100px">
-          <p style="font-family: 'Morning Star';font-size: 400%;background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;letter-spacing: 1px">yude</p>
-      <p style="font-size:140%;color:#AAB1B0"><i class="fas fa-birthday-cake"></i> <strong>November, 19th</strong></p><p style="font-size:140%;color:#AAB1B0;margin-top: -14px"><i class="fas fa-map-marker-alt"></i> <strong>Tottori, Japan</strong></p>
-    </div>
+          <img src="../assets/mel-full.jpg" alt="yude's avatar"
+            style="border-radius: 10px;margin-bottom:10px;height:100px;width:100px">
+          <p
+            style="font-family: 'Morning Star';font-size: 400%;background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;letter-spacing: 1px">
+            yude</p>
+          <p style="font-size:140%;color:#AAB1B0"><i class="fas fa-birthday-cake"></i> <strong>November, 19th</strong>
+          </p>
+          <p style="font-size:140%;color:#AAB1B0;margin-top: -14px"><i class="fas fa-map-marker-alt"></i>
+            <strong>Tottori, Japan</strong></p>
+        </div>
       </div>
       <div class="card" style="background-color: #31353F;margin-top: 10px">
         <div class="card-body">
@@ -189,11 +212,13 @@
               <p><a href="https://peing.net/yude">peing.net/<br>yude</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="Misskey" src="../assets/brand/misskey.ico" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="Misskey" src="../assets/brand/misskey.ico" height=30px width=30px>
+              </h3>
               <p><a href="https://misskey.io/@yude">@yude</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="プチリリ" src="../assets/brand/petitlyrics.ico" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="プチリリ" src="../assets/brand/petitlyrics.ico" height=30px width=30px>
+              </h3>
               <p><a href="https://petitlyrics.com/profile/yude">yude</a></p>
             </div>
             <div class="box">
@@ -225,7 +250,8 @@
               <p><a href="https://annict.com/@yude">@yude</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="Coderwall" src="../assets/brand/coderwall.png" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="Coderwall" src="../assets/brand/coderwall.png" height=30px width=30px>
+              </h3>
               <p><a href="https://coderwall.com/yude">yude</a></p>
             </div>
             <div class="box">
@@ -233,7 +259,8 @@
               <p><a href="https://booklog.jp/users/yudetex/">yudetex</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="Dailymotion" src="../assets/brand/dailymotion.png" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="Dailymotion" src="../assets/brand/dailymotion.png" height=30px
+                  width=30px></h3>
               <p><a href="https://www.dailymotion.com/yude_point">yude_point</a></p>
             </div>
             <div class="box">
@@ -245,11 +272,13 @@
               <p><a href="https://gab.com/yude">@yude</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="kitsu.io" src="../assets/brand/kitsuio.png" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="kitsu.io" src="../assets/brand/kitsuio.png" height=30px width=30px>
+              </h3>
               <p><a href="https://kitsu.io/users/387191">yude (387191)</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="MyAnimeList" src="../assets/brand/mal.ico" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="MyAnimeList" src="../assets/brand/mal.ico" height=30px width=30px>
+              </h3>
               <p><a href="https://myanimelist.net/profile/yude">yude</a></p>
             </div>
             <div class="box">
@@ -257,7 +286,8 @@
               <p><a href="https://plug.dj/@/yudecchi">yudecchi</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="Plays.tv" src="../assets/brand/playstv.png" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="Plays.tv" src="../assets/brand/playstv.png" height=30px width=30px>
+              </h3>
               <p><a href="https://plays.tv/u/yude">yude</a></p>
             </div>
             <div class="box">
@@ -277,11 +307,13 @@
               <p><a href="https://ja.wikipedia.org/wiki/%E5%88%A9%E7%94%A8%E8%80%85:Yude1119">Yude1119</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="Fuwanovel" src="../assets/brand/fuwanovel.ico" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="Fuwanovel" src="../assets/brand/fuwanovel.ico" height=30px width=30px>
+              </h3>
               <p><a href="https://forums.fuwanovel.net/profile/25537-yude1119/">yude1119 (25537)</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="Fuwanovel" src="../assets/brand/shinchoku_note.ico" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="Fuwanovel" src="../assets/brand/shinchoku_note.ico" height=30px
+                  width=30px></h3>
               <p><a href="https://shinchoku.net/users/yudete">yudete</a></p>
             </div>
             <div class="box">
@@ -293,7 +325,8 @@
               <p><a href="https://yude.itch.io/">yude</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="Aeria Games" src="../assets/brand/aeria.ico" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="Aeria Games" src="../assets/brand/aeria.ico" height=30px width=30px>
+              </h3>
               <p><a href="https://www.aeriagames.com/user/yudetex/">yudetex</a></p>
             </div>
             <div class="box">
@@ -301,11 +334,13 @@
               <p><a href="https://codepen.io/yude/">yude</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="Greasyfork" src="../assets/brand/greasyfork.webp" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="Greasyfork" src="../assets/brand/greasyfork.webp" height=30px
+                  width=30px></h3>
               <p><a href="https://greasyfork.org/ja/users/217626-yude">yude (217626)</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="Crowdin" src="../assets/brand/crowdin.png" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="Crowdin" src="../assets/brand/crowdin.png" height=30px width=30px>
+              </h3>
               <p><a href="https://crowdin.com/profile/yudecchi">yudecchi</a></p>
             </div>
             <div class="box">
@@ -313,11 +348,13 @@
               <p><a href="https://www.npmjs.com/~yude">yude</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="WakaTime" src="../assets/brand/wakatime.png" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="WakaTime" src="../assets/brand/wakatime.png" height=30px width=30px>
+              </h3>
               <p><a href="https://wakatime.com/@yude">@yude</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="Togetter" src="../assets/brand/togetter.png" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="Togetter" src="../assets/brand/togetter.png" height=30px width=30px>
+              </h3>
               <p><a href="https://togetter.com/id/yudete">yudete</a></p>
             </div>
             <div class="box">
@@ -333,7 +370,8 @@
               <p><a href="http://photozou.jp/user/top/3240087">yude (3240087)</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="Myspace" src="../assets/brand/myspace.png" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="Myspace" src="../assets/brand/myspace.png" height=30px width=30px>
+              </h3>
               <p><a href="https://myspace.com/yudetex">yudetex</a></p>
             </div>
             <div class="box">
@@ -349,11 +387,13 @@
               <p><a href="https://ask.fm/yude_point">yude_point</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="goodreads" src="../assets/brand/goodreads.png" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="goodreads" src="../assets/brand/goodreads.png" height=30px width=30px>
+              </h3>
               <p><a href="https://www.goodreads.com/user/show/96709284-yude">yude (96709284)</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="Chocolatey" src="../assets/brand/chocolatey.ico" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="Chocolatey" src="../assets/brand/chocolatey.ico" height=30px
+                  width=30px></h3>
               <p><a href="https://chocolatey.org/profiles/yude">yude</a></p>
             </div>
             <div class="box">
@@ -369,7 +409,8 @@
               <p><a href="https://vimeo.com/yude">yude</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="AtCoder" src="../assets/brand/atcoder.png" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="AtCoder" src="../assets/brand/atcoder.png" height=30px width=30px>
+              </h3>
               <p><a href="https://atcoder.jp/users/yude">yude</a></p>
             </div>
             <div class="box">
@@ -377,11 +418,13 @@
               <p><a href="https://discussion.evernote.com/profile/413460-yude/">yude (413460)</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="niconico" src="../assets/brand/niconico.png" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="niconico" src="../assets/brand/niconico.png" height=30px width=30px>
+              </h3>
               <p><a href="https://www.nicovideo.jp/user/22932031">yude (22932031)</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="Gravatar" src="../assets/brand/gravatar.ico" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="Gravatar" src="../assets/brand/gravatar.ico" height=30px width=30px>
+              </h3>
               <p><a href="https://ja.gravatar.com/yudete">yudete</a></p>
             </div>
             <div class="box">
@@ -393,7 +436,8 @@
               <p><a href="https://suzuri.jp/yude">yude</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><img alt="Libre.fm" src="../assets/brand/librefm.png" height=30px width=30px></h3>
+              <h3 class="hvr-bounce-in"><img alt="Libre.fm" src="../assets/brand/librefm.png" height=30px width=30px>
+              </h3>
               <p><a href="https://libre.fm/user/yude">yude</a></p>
             </div>
             <div class="box">
@@ -421,69 +465,100 @@
               <p><a href="https://www.resume.id/yude">yude</a></p>
             </div>
             <div class="box">
-                <h3 class="hvr-bounce-in"><img alt="Sketchfab" src="../assets/brand/sketchfab.png" height=30px width=30px></h3>
-                <p><a href="https://sketchfab.com/yude">yude</a></p>
-              </div>
-              <div class="box">
-                  <h3 class="hvr-bounce-in"><img alt="KnowYourMeme" src="../assets/brand/knowyourmeme.jpg" height=30px width=30px></h3>
-                  <p><a href="https://knowyourmeme.com/users/yude1119">yude1119</a></p>
-                </div>
-                <div class="box">
-                    <h3 class="hvr-bounce-in"><img alt="bilibili" src="../assets/brand/bilibili.ico" height=30px width=30px></h3>
-                    <p><a href="https://space.bilibili.com/446089772">yudetex (446089772)</a></p>
-                  </div>
-                  <div class="box">
-                    <h3 class="hvr-bounce-in"><i class="fab fa-mastodon"></i></h3>
-                    <p><a href="https://mast.moe/@yude">mast.moe/<br>@yude</a></p>
-                  </div>
-                  <div class="box">
-                      <h3 class="hvr-bounce-in"><img alt="ニジエ"" src="../assets/brand/nijie.png" height=30px width=30px></h3>
-                      <p><a href="https://nijie.info/members.php?id=1390736">yude (1390736)</a></p>
-                    </div>
-                    <div class="box">
-                        <h3 class="hvr-bounce-in"><img alt="Smashcast"" src="../assets/brand/smashcast.png" height=30px width=30px></h3>
-                        <p><a href="https://www.smashcast.tv/yude">yude</a></p>
-                      </div>
-                      <div class="box">
-                          <h3 class="hvr-bounce-in"><img alt="Irori"" src="../assets/brand/irori.svg" height=30px width=30px></h3>
-                          <p><a href="https://irori.app/@yude">@yude</a></p>
-                        </div>
-                        <div class="box">
-                            <h3 class="hvr-bounce-in"><img alt="Iwara"" src="../assets/brand/iwara.ico" height=30px width=30px></h3>
-                            <p><a href="https://www.iwara.tv/users/yude">yude</a></p>
-                          </div>
-                          <div class="box">
-                              <h3 class="hvr-bounce-in"><img alt="Chordify"" src="../assets/brand/chordify.webp" height=30px width=30px></h3>
-                              <p><a href="https://chordify.net/profile/5d57fef4786de0450000db60">yude</a></p>
-                            </div>
+              <h3 class="hvr-bounce-in"><img alt="Sketchfab" src="../assets/brand/sketchfab.png" height=30px width=30px>
+              </h3>
+              <p><a href="https://sketchfab.com/yude">yude</a></p>
+            </div>
+            <div class="box">
+              <h3 class="hvr-bounce-in"><img alt="KnowYourMeme" src="../assets/brand/knowyourmeme.jpg" height=30px
+                  width=30px></h3>
+              <p><a href="https://knowyourmeme.com/users/yude1119">yude1119</a></p>
+            </div>
+            <div class="box">
+              <h3 class="hvr-bounce-in"><img alt="bilibili" src="../assets/brand/bilibili.ico" height=30px width=30px>
+              </h3>
+              <p><a href="https://space.bilibili.com/446089772">yudetex (446089772)</a></p>
+            </div>
+            <div class="box">
+              <h3 class="hvr-bounce-in"><i class="fab fa-mastodon"></i></h3>
+              <p><a href="https://mast.moe/@yude">mast.moe/<br>@yude</a></p>
+            </div>
+            <div class="box">
+              <h3 class="hvr-bounce-in"><img alt="ニジエ"" src=" ../assets/brand/nijie.png" height=30px width=30px></h3>
+              <p><a href="https://nijie.info/members.php?id=1390736">yude (1390736)</a></p>
+            </div>
+            <div class="box">
+              <h3 class="hvr-bounce-in"><img alt="Smashcast"" src=" ../assets/brand/smashcast.png" height=30px
+                  width=30px></h3>
+              <p><a href="https://www.smashcast.tv/yude">yude</a></p>
+            </div>
+            <div class="box">
+              <h3 class="hvr-bounce-in"><img alt="Irori"" src=" ../assets/brand/irori.svg" height=30px width=30px></h3>
+              <p><a href="https://irori.app/@yude">@yude</a></p>
+            </div>
+            <div class="box">
+              <h3 class="hvr-bounce-in"><img alt="Iwara"" src=" ../assets/brand/iwara.ico" height=30px width=30px></h3>
+              <p><a href="https://www.iwara.tv/users/yude">yude</a></p>
+            </div>
+            <div class="box">
+              <h3 class="hvr-bounce-in"><img alt="Chordify"" src=" ../assets/brand/chordify.webp" height=30px
+                  width=30px></h3>
+              <p><a href="https://chordify.net/profile/5d57fef4786de0450000db60">yude</a></p>
+            </div>
           </div>
         </div>
       </div>
       <div class="card" style="margin-top: 10px;">
         <div class="card-body">
-          <h5 class="card-title"><i class="fab fa-twitter"></i> Twitter - <a href="https://twitter.com/yudete">@yudete</a></h5>
-          <a class="twitter-timeline" data-lang="ja" data-dnt="true" height=600px width=100% data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/yudete?ref_src=twsrc%5Etfw">Tweets by yudete</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <h5 class="card-title"><i class="fab fa-twitter"></i> Twitter - <a
+              href="https://twitter.com/yudete">@yudete</a></h5>
+          <a class="twitter-timeline" data-lang="ja" data-dnt="true" height=600px width=100% data-theme="dark"
+            data-link-color="#2B7BB9" href="https://twitter.com/yudete?ref_src=twsrc%5Etfw">Tweets by yudete</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
-        </div>
+      </div>
       <div class="card" style="color:white;background-color: #31353F;margin-top: 10px">
         <div class="card-body">
           <h2 style="color: #c8c8c8"><i class="fas fa-cannabis"></i> ゲーム</h2>
-            <p><h4><span class="badge badge-warning">osu!</span></h4> <code><a style="color: #d64083" href="https://osu.ppy.sh/users/4617937">yude (4617937)</a></code></p>
-              <p><h4><span class="badge badge-warning">バンドリ！ ガールズバンドパーティ！</span></h4> <code>76306887</code> <button class="btn dayo" data-clipboard-text="76306887"><i class="fas fa-paste"></i></button></p>
-                <p><h4><span class="badge badge-warning">モンスターストライク</span></h4> <code>330,136,392,123</code> <button class="btn dayo" data-clipboard-text="330136392123"><i class="fas fa-paste"></i></button></p>
-                  <p><h4><span class="badge badge-warning">CHUNITHM-NET</span></h4> <code>5061450737648</code> <button class="btn dayo" data-clipboard-text="5061450737648"><i class="fas fa-paste"></i></button></p>
-                    <p><h4><span class="badge badge-warning">ドンだーひろば</span></h4> <code>854214736679</code> <button class="btn dayo" data-clipboard-text="854214736679"><i class="fas fa-paste"></i></button></p>
-                      <p><h4><span class="badge badge-warning">逆転オセロニア</span></h4> <code>580109295314</code> <button class="btn dayo" data-clipboard-text="580109295314"><i class="fas fa-paste"></i></button></p>
-                      </div>
-                  </div></div>
-                  <div class="mx-auto" style="width:90%;margin-top:5%;text-align:center">
-                      <hr>
-                      <p style="color: gray; font-family: 'Roboto Mono'"><span style="display: inline-block">Made by <a style="color:black" href="https://twitter.com/yudete">yude</a>.</span> | <a href="../about"><span style="display: inline-block;color:black">About yude.moe</span></a></p>
-                    </div>
-                        </div>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js"></script>
-              <script>var clipboard = new ClipboardJS('.btn');</script>
-            </body>
+          <p>
+            <h4><span class="badge badge-warning">osu!</span></h4> <code><a style="color: #d64083"
+                href="https://osu.ppy.sh/users/4617937">yude (4617937)</a></code>
+          </p>
+          <p>
+            <h4><span class="badge badge-warning">バンドリ！ ガールズバンドパーティ！</span></h4> <code>76306887</code> <button
+              class="btn dayo" data-clipboard-text="76306887"><i class="fas fa-paste"></i></button>
+          </p>
+          <p>
+            <h4><span class="badge badge-warning">モンスターストライク</span></h4> <code>330,136,392,123</code> <button
+              class="btn dayo" data-clipboard-text="330136392123"><i class="fas fa-paste"></i></button>
+          </p>
+          <p>
+            <h4><span class="badge badge-warning">CHUNITHM-NET</span></h4> <code>5061450737648</code> <button
+              class="btn dayo" data-clipboard-text="5061450737648"><i class="fas fa-paste"></i></button>
+          </p>
+          <p>
+            <h4><span class="badge badge-warning">ドンだーひろば</span></h4> <code>854214736679</code> <button class="btn dayo"
+              data-clipboard-text="854214736679"><i class="fas fa-paste"></i></button>
+          </p>
+          <p>
+            <h4><span class="badge badge-warning">逆転オセロニア</span></h4> <code>580109295314</code> <button class="btn dayo"
+              data-clipboard-text="580109295314"><i class="fas fa-paste"></i></button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto" style="width:90%;margin-top:5%;text-align:center">
+      <hr>
+      <p style="color: gray; font-family: 'Roboto Mono'"><span style="display: inline-block">Made by <a
+            style="color:black" href="https://twitter.com/yudete">yude</a>.</span> | <a href="../about"><span
+            style="display: inline-block;color:black">About yude.moe</span></a></p>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js"></script>
+  <script>
+    var clipboard = new ClipboardJS('.btn');
+  </script>
+</body>
 
 </html>

@@ -1,14 +1,18 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117103073-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-117103073-1');
-</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117103073-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-117103073-1');
+	</script>
 	<title>🔗 相互リンク | yude.moe</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,8 +20,16 @@
 	<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
 	<link rel="dns-prefetch" href="code.jquery.com">
 	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css" integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" media="print" onload="this.media='all'">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css"
+		integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print"
+		onload="this.media='all'" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
+		media="print" onload="this.media='all'" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+		integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" media="print"
+		onload="this.media='all'" />
 	<link rel="icon" href="../assets/favicon.ico">
 	<meta property="og:title" content="🔗 相互リンク | yude.moe" />
 	<meta property="og:type" content="website" />
@@ -27,125 +39,149 @@
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@tamago_server" />
 	<style>
-				@font-face {
-  font-family: 'Noto Sans JP';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../assets/fonts/noto-sans-jp-v24-japanese-regular.eot'); /* IE9 Compat Modes */
-  src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'),
-       url('../assets/fonts/noto-sans-jp-v24-japanese-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/noto-sans-jp-v24-japanese-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/noto-sans-jp-v24-japanese-regular.woff') format('woff'), /* Modern Browsers */
-       url('../assets/fonts/noto-sans-jp-v24-japanese-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/noto-sans-jp-v24-japanese-regular.svg#NotoSansJP') format('svg'); /* Legacy iOS */
-	   font-display: swap;
-}
-@font-face {
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../assets/fonts/roboto-mono-v7-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Roboto Mono'), local('RobotoMono-Regular'),
-       url('../assets/fonts/roboto-mono-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/roboto-mono-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/roboto-mono-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../assets/fonts/roboto-mono-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/roboto-mono-v7-latin-regular.svg#RobotoMono') format('svg'); /* Legacy iOS */
-	   font-display: swap;
-}
-@font-face {
-     font-family: 'Font Awesome 5 Brands';
-     font-style: normal;
-     font-weight: 400;
-     src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-brands-400.woff2") format("woff2");
-     font-display: swap;
- }
- @font-face {
-     font-family: 'Font Awesome 5 Free';
-     font-style: normal;
-     font-weight: 900;
-     src:url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-solid-900.woff2") format("woff2");
-     font-display: swap;
- }
-		body{font-family:'Font Awesome 5 Brands','Font Awesome 5 Free','Roboto Mono',"Noto Sans JP"}
-		canvas{display: block;}
+		@font-face {
+			font-family: 'Font Awesome 5 Brands';
+			font-style: normal;
+			font-weight: 400;
+			src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-brands-400.woff2") format("woff2");
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Font Awesome 5 Free';
+			font-style: normal;
+			font-weight: 900;
+			src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-solid-900.woff2") format("woff2");
+			font-display: swap;
+		}
+
+		body {
+			font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Roboto Mono', "Noto Sans JP"
+		}
+
+		canvas {
+			display: block;
+		}
 
 		#particles-js {
 			background-color: #262a2f;
-			position:fixed;
-			top:0;
-			right:0;
-			bottom:0;
-			left:0;
-			z-index:0;
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 0;
 		}
+
 		#overlay {
 			position: relative;
 		}
-		.text{
+
+		.text {
 			position: absolute;
 			right: 5px;
 			bottom: 10px;
 			font-size: 20px;
 			line-height: 130%;
 		}
-		.bg{background-image: url("assets/bg.png");background-position-y: bottom}
-		</style>
+
+		.bg {
+			background-image: url("assets/bg.png");
+			background-position-y: bottom
+		}
+	</style>
 </head>
+
 <body>
 	<div id="particles-js"></div>
 	<div id="overlay" class="container" style="text-align:center">
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
-				<li class="breadcrumb-item" aria-current="page"><a href="../" style="color:#778899"><i class="fas fa-home"></i> yude.moe</a></li>
+				<li class="breadcrumb-item" aria-current="page"><a href="../" style="color:#778899"><i
+							class="fas fa-home"></i> yude.moe</a></li>
 				<li class="breadcrumb-item active" aria-current="page"><i class="fas fa-link"></i> 相互リンク</li>
 			</ol>
 		</nav>
 		<div style="position:relative;pointer-events:auto">
-			
-			  <div class="card">
+
+			<div class="card">
 				<div class="card-body">
-				  <h5 class="card-title">相互リンク</h5>
-				  <h6 class="card-subtitle mb-2 text-muted">yude.moe's <span style="color: #242933">mutual links</span></span></h6><hr>
-				  <a href="https://koronyan888.github.io/"><img data-toggle="tooltip" data-placement="top" title="ころにゃんのホームページ" width=234px src="koronyan888.png" alt="ころにゃんのホームページ"></a>
-				  <a href="https://nona.sikeserver.com/"><img data-toggle="tooltip" data-placement="top" title="こーげんやさい" width=234px src="takakun_impact.png" alt="こーげんやさい"></a>
-				  <a href="https://exout.net/~kirby3ds/" target="_blank"><img data-toggle="tooltip" data-placement="top" title="カービィ★KIRBYの家" width=234px src="https://exout.net/~kirby3ds/link/bnr/bnr_234x60.png" alt="カービィ★KIRBYの家"></a>
-				  <a href="https://pc7342.net/"><img src="https://pc7342.net/banner.png" width=200px height=40px alt="pc7342's Site"></a>
-				  <hr>
-				  相互リンク をしてくださる方は、<a href="https://twitter.com/yudete"><i class="fab fa-twitter"></i> @yudete</a> までご連絡ください。
+					<h5 class="card-title">相互リンク</h5>
+					<h6 class="card-subtitle mb-2 text-muted">yude.moe's <span style="color: #242933">mutual
+							links</span></span></h6>
+					<hr>
+					<a href="https://koronyan888.github.io/"><img data-toggle="tooltip" data-placement="top"
+							title="ころにゃんのホームページ" width=234px src="koronyan888.png" alt="ころにゃんのホームページ"></a>
+					<a href="https://nona.sikeserver.com/"><img data-toggle="tooltip" data-placement="top"
+							title="こーげんやさい" width=234px src="takakun_impact.png" alt="こーげんやさい"></a>
+					<a href="https://exout.net/~kirby3ds/" target="_blank"><img data-toggle="tooltip"
+							data-placement="top" title="カービィ★KIRBYの家" width=234px
+							src="https://exout.net/~kirby3ds/link/bnr/bnr_234x60.png" alt="カービィ★KIRBYの家"></a>
+					<a href="https://pc7342.net/"><img src="https://pc7342.net/banner.png" width=200px height=40px
+							alt="pc7342's Site"></a>
+					<hr>
+					相互リンク をしてくださる方は、<a href="https://twitter.com/yudete"><i class="fab fa-twitter"></i> @yudete</a>
+					までご連絡ください。
 				</div>
-			  </div>
-			  <div class="card" style="margin-top: 10px">
+			</div>
+			<div class="card" style="margin-top: 10px">
 				<div class="card-body">
-				<h5 class="card-title">サイトバナー</h5>
-				<h6 class="card-subtitle mb-2 text-muted">yude.moe's <span style="color: #242933">banner</span></h6><hr>
-				<img data-toggle="tooltip" title="banner.png (200x40)" src="../banner.png" alt="yude.moe" width=200px height=40px>
-				<p><span class="badge badge-success">HTML</span></p> <p style="margin-top: -18px"><code id="source_html">&lt;a href="https://yude.moe"&gt;&lt;img src="https://yude.moe/banner.png" width=200px height=40px alt="yude.moe"&gt;&lt;/a&gt;</code>
-				<p><button source_html data-toggle="tooltip" data-trigger="click" title="✔ コピーしました" onclick="setTimeout('$(\'[source_html]\').tooltip(\'hide\')', 1000)" type="button" class="btn btn-primary" data-clipboard-target="#source_html"><i class="fas fa-clipboard"></i> コピー</button></p>
-				<p><span class="badge badge-success">BBCode</span></p> <p style="margin-top: -18px"><code id="source_bbcode">[img]https://yude.moe/banner.png[/img]</code>
-				<p><button source_bbcode data-toggle="tooltip" onclick="setTimeout('$(\'[source_bbcode]\').tooltip(\'hide\')', 1000)" data-trigger="click" title="✔ コピーしました" type="button" class="btn btn-primary" data-clipboard-target="#source_bbcode"><i class="fas fa-clipboard"></i> コピー</button></p></p>
-				  
+					<h5 class="card-title">サイトバナー</h5>
+					<h6 class="card-subtitle mb-2 text-muted">yude.moe's <span style="color: #242933">banner</span></h6>
+					<hr>
+					<img data-toggle="tooltip" title="banner.png (200x40)" src="../banner.png" alt="yude.moe"
+						width=200px height=40px>
+					<p><span class="badge badge-success">HTML</span></p>
+					<p style="margin-top: -18px"><code id="source_html">&lt;a href="https://yude.moe"&gt;&lt;img
+							src="https://yude.moe/banner.png" width=200px height=40px
+							alt="yude.moe"&gt;&lt;/a&gt;</code>
+						<p><button source_html data-toggle="tooltip" data-trigger="click" title="✔ コピーしました"
+								onclick="setTimeout('$(\'[source_html]\').tooltip(\'hide\')', 1000)" type="button"
+								class="btn btn-primary" data-clipboard-target="#source_html"><i
+									class="fas fa-clipboard"></i> コピー</button></p>
+						<p><span class="badge badge-success">BBCode</span></p>
+						<p style="margin-top: -18px"><code
+								id="source_bbcode">[img]https://yude.moe/banner.png[/img]</code>
+							<p><button source_bbcode data-toggle="tooltip"
+									onclick="setTimeout('$(\'[source_bbcode]\').tooltip(\'hide\')', 1000)"
+									data-trigger="click" title="✔ コピーしました" type="button" class="btn btn-primary"
+									data-clipboard-target="#source_bbcode"><i class="fas fa-clipboard"></i> コピー</button>
+							</p>
+						</p>
+
 				</div>
-			  </div>
-				</div>
-				<div class="mx-auto" style="width: 90%;margin-top:5%;text-align:center">
-						<hr>
-						<p style="color: gray; font-family: 'Roboto Mono'"><span style="display: inline-block">Made by <a style="color:black" href="https://twitter.com/yudete">yude</a>.</span> | <a href="../about"><span style="display: inline-block;color:black">About yude.moe</span></a></p>
-					</div>
-						</div>
-			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-			<script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
-			<script async>
-			$(function () {
-				$('[data-toggle="tooltip"]').tooltip()
-			  })
-			</script>
-			<script async>new ClipboardJS('.btn');</script>
-			<script>
-			$(function () {
-				$('[data-toggle="tooltip"]').tooltip()
-			  })
-			  </script></body>
-		</html>
+			</div>
+		</div>
+		<div class="mx-auto" style="width: 90%;margin-top:5%;text-align:center">
+			<hr>
+			<p style="color: gray; font-family: 'Roboto Mono'"><span style="display: inline-block">Made by <a
+						style="color:black" href="https://twitter.com/yudete">yude</a>.</span> | <a
+					href="../about"><span style="display: inline-block;color:black">About yude.moe</span></a></p>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+	<script async>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+	<script async>
+		new ClipboardJS('.btn');
+	</script>
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+</body>
+
+</html>

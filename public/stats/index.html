@@ -1,14 +1,18 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117103073-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-117103073-1');
-</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117103073-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-117103073-1');
+	</script>
 	<title>✔ サーバー情報 | yude.moe</title>
 	<meta charset="utf-8">
 	<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
@@ -16,72 +20,65 @@
 	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css" integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" media="print" onload="this.media='all'">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css"
+		integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print"
+		onload="this.media='all'" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
+		media="print" onload="this.media='all'" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+		integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" media="print"
+		onload="this.media='all'" />
 	<link rel="icon" href="../assets/favicon.ico">
 	<meta property="og:title" content="✔ サーバー情報 | yude.moe" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://yude.moe/stats" />
 	<meta property="og:image" content="https://yude.moe/assets/mel-full.jpg" />
-	<meta property="og:description" content="✔ yude.moe で稼働中のサーバーについての情報 | Detailed informations about yude.moe servers" />
+	<meta property="og:description"
+		content="✔ yude.moe で稼働中のサーバーについての情報 | Detailed informations about yude.moe servers" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@tamago_server" />
 	<style>
-				@font-face {
-  font-family: 'Noto Sans JP';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../assets/fonts/noto-sans-jp-v24-japanese-regular.eot'); /* IE9 Compat Modes */
-  src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'),
-       url('../assets/fonts/noto-sans-jp-v24-japanese-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/noto-sans-jp-v24-japanese-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/noto-sans-jp-v24-japanese-regular.woff') format('woff'), /* Modern Browsers */
-       url('../assets/fonts/noto-sans-jp-v24-japanese-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/noto-sans-jp-v24-japanese-regular.svg#NotoSansJP') format('svg'); /* Legacy iOS */
-	   font-display: swap;
-}
-@font-face {
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../assets/fonts/roboto-mono-v7-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Roboto Mono'), local('RobotoMono-Regular'),
-       url('../assets/fonts/roboto-mono-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/roboto-mono-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/roboto-mono-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../assets/fonts/roboto-mono-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/roboto-mono-v7-latin-regular.svg#RobotoMono') format('svg'); /* Legacy iOS */
-	   font-display: swap;
-}
-@font-face {
-     font-family: 'Font Awesome 5 Brands';
-     font-style: normal;
-     font-weight: 400;
-     src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-brands-400.woff2") format("woff2");
-     font-display: swap;
- }
- @font-face {
-     font-family: 'Font Awesome 5 Free';
-     font-style: normal;
-     font-weight: 900;
-     src:url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-solid-900.woff2") format("woff2");
-     font-display: swap;
- }
- body{font-family:'Font Awesome 5 Brands','Font Awesome 5 Free','Roboto Mono',"Noto Sans JP"}
-		canvas{display: block}
+		@font-face {
+			font-family: 'Font Awesome 5 Brands';
+			font-style: normal;
+			font-weight: 400;
+			src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-brands-400.woff2") format("woff2");
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Font Awesome 5 Free';
+			font-style: normal;
+			font-weight: 900;
+			src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-solid-900.woff2") format("woff2");
+			font-display: swap;
+		}
+
+		body {
+			font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Roboto Mono', "Noto Sans JP"
+		}
+
+		canvas {
+			display: block
+		}
+
 		#particles-js {
 			background-color: #262a2f;
-			position:fixed;
-			top:0;
-			right:0;
-			bottom:0;
-			left:0;
-			z-index:0;
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 0;
 		}
+
 		#overlay {
 			position: relative;
 		}
-		.text{
+
+		.text {
 			position: absolute;
 			right: 5px;
 			bottom: 10px;
@@ -90,40 +87,64 @@
 		}
 	</style>
 </head>
+
 <body>
 	<div id="particles-js"></div>
 	<div id="overlay" class="container" style="text-align:center">
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page"><a href="../" style="color:#778899"><i class="fas fa-home"></i> yude.moe</a></li>
-                <li class="breadcrumb-item" aria-current="page"><i class="fas fa-check"></i> stats.yude.moe</li>
+				<li class="breadcrumb-item active" aria-current="page"><a href="../" style="color:#778899"><i
+							class="fas fa-home"></i> yude.moe</a></li>
+				<li class="breadcrumb-item" aria-current="page"><i class="fas fa-check"></i> stats.yude.moe</li>
 			</ol>
 		</nav>
-        <div class="card" style="color:black;margin-bottom:10px">
-            <div class="card-body">
-					<h5 class="card-title" style="text-align:center"><strong>サーバー情報</strong></h5>
-					<h6 class="card-subtitle mb-2 text-muted" style="text-align:center">server status of yude.moe</h6>
-					<span style="text-align:right">Powered by <a style="color:#20363F" href="https://mackerel.io/"><img width=30px height=30px src="../assets/brand/mackerel.png">Mackerel</a>.</span>
-            </div>
-        </div>
-        <div class="card" style="margin-bottom:10px">
-            <div class="card-header">hako @ Tottori, Japan</div>
-            <div class="card-body">
-				<iframe src="https://mackerel.io/embed/public/embed/0Aars7YzLyMpyRs7RrO98ApBKW9AamGySfgSjGca6SmlWv3ecWZKOCvjsGNWvU8G?period=30m" height="200" width="100%"" frameborder="0"></iframe>
-				<iframe src="https://mackerel.io/embed/public/embed/jgTOKooLIRWJqlrtWMmq8JDmOjNN9jkEBsGWec78m8XGsvidJITHg95fxnvZSdzw?period=30m" height="200" width="100%" frameborder="0"></iframe>
-				<iframe src="https://mackerel.io/embed/public/embed/pgGRaoxLFMlZP9JGzkTQw3Mo14jWR7NKbfWISVUR89Qvs5785yznx6CJ5oeaJAMy?period=30m" height="200" width="100%" frameborder="0"></iframe>
-				<iframe src="https://mackerel.io/embed/public/embed/Q7QExxmpei9Jl7tWCCkxyFt7iSIPmrnRStEoOZIaXPeBhatpWMd95hQKoYyzyWqd?period=30m" height="200" width="100%" frameborder="0"></iframe>
-				<iframe src="https://mackerel.io/embed/public/embed/zwSv7gTEGBRdYyJizrxnte3BMTuXzSgaO4oBl9HFs9vg6QSReh0nlxnXhmyWew9i?period=30m" height="200" width="100%" frameborder="0"></iframe>
-				<iframe src="https://mackerel.io/embed/public/embed/GlNxrNbZmWKKYHJ3HU4Oon3mygV0GFBYm6DJtgT1CbGOtO5JOxx5EvxxX5d2mwSX?period=30m" height="200" width="100%" frameborder="0"></iframe>
-            </div>
-          </div>
-		  <div class="mx-auto" style="width:90%;margin-top:5%;text-align:center">
-				<hr>
-				<p style="color: gray; font-family: 'Roboto Mono'"><span style="display: inline-block">Made by <a style="color:black" href="https://twitter.com/yudete">yude</a>.</span> | <a href="../about"><span style="display: inline-block;color:black">About yude.moe</span></a></p>
+		<div class="card" style="color:black;margin-bottom:10px">
+			<div class="card-body">
+				<h5 class="card-title" style="text-align:center"><strong>サーバー情報</strong></h5>
+				<h6 class="card-subtitle mb-2 text-muted" style="text-align:center">server status of yude.moe</h6>
+				<span style="text-align:right">Powered by <a style="color:#20363F" href="https://mackerel.io/"><img
+							width=30px height=30px src="../assets/brand/mackerel.png">Mackerel</a>.</span>
 			</div>
+		</div>
+		<div class="card" style="margin-bottom:10px">
+			<div class="card-header">hako @ Tottori, Japan</div>
+			<div class="card-body">
+				<iframe
+					src="https://mackerel.io/embed/public/embed/0Aars7YzLyMpyRs7RrO98ApBKW9AamGySfgSjGca6SmlWv3ecWZKOCvjsGNWvU8G?period=30m"
+					height="200" width="100%"" frameborder=" 0"></iframe>
+				<iframe
+					src="https://mackerel.io/embed/public/embed/jgTOKooLIRWJqlrtWMmq8JDmOjNN9jkEBsGWec78m8XGsvidJITHg95fxnvZSdzw?period=30m"
+					height="200" width="100%" frameborder="0"></iframe>
+				<iframe
+					src="https://mackerel.io/embed/public/embed/pgGRaoxLFMlZP9JGzkTQw3Mo14jWR7NKbfWISVUR89Qvs5785yznx6CJ5oeaJAMy?period=30m"
+					height="200" width="100%" frameborder="0"></iframe>
+				<iframe
+					src="https://mackerel.io/embed/public/embed/Q7QExxmpei9Jl7tWCCkxyFt7iSIPmrnRStEoOZIaXPeBhatpWMd95hQKoYyzyWqd?period=30m"
+					height="200" width="100%" frameborder="0"></iframe>
+				<iframe
+					src="https://mackerel.io/embed/public/embed/zwSv7gTEGBRdYyJizrxnte3BMTuXzSgaO4oBl9HFs9vg6QSReh0nlxnXhmyWew9i?period=30m"
+					height="200" width="100%" frameborder="0"></iframe>
+				<iframe
+					src="https://mackerel.io/embed/public/embed/GlNxrNbZmWKKYHJ3HU4Oon3mygV0GFBYm6DJtgT1CbGOtO5JOxx5EvxxX5d2mwSX?period=30m"
+					height="200" width="100%" frameborder="0"></iframe>
 			</div>
-			<script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-			<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-			<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		</body>
-		</html>
+		</div>
+		<div class="mx-auto" style="width:90%;margin-top:5%;text-align:center">
+			<hr>
+			<p style="color: gray; font-family: 'Roboto Mono'"><span style="display: inline-block">Made by <a
+						style="color:black" href="https://twitter.com/yudete">yude</a>.</span> | <a
+					href="../about"><span style="display: inline-block;color:black">About yude.moe</span></a></p>
+		</div>
+	</div>
+	<script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>
