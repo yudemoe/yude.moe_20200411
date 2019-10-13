@@ -6,44 +6,36 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
+    "headers": [{
+        "source": "**/*.@(jpg|jpeg|gif|png)",
+        "headers": [{
+          "key": "Cache-Control",
+          "value": "max-age=7776000,public"
+        }]
+      },
       {
-        "source": "**",
-        "destination": "/index.html"
+        "source": "**/*.@(webp|woff2|js|css)",
+        "headers": [{
+          "key": "Cache-Control",
+          "value": "max-age=31536000,public"
+        }]
+      },
+      {
+        "source": "**/*.@(eot|otf|ttf|ttc|woff|woff2|font.css)",
+        "headers": [{
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }]
+      },
+      {
+        "source": "**/*.@(eot|otf|ttf|ttc|woff|woff2|font.css)",
+        "headers": [{
+          "key": "Access-Control-Allow-Headers",
+          "value": "Origin, X-Requested-With, Content-Type, Accept"
+        }]
       }
     ],
-    "headers": [ {
-      "source" : "**/*.@(jpg|jpeg|gif|png)",
-    "headers" : [ {
-      "key" : "Cache-Control",
-      "value" : "max-age=7776000,public"
-    } ]
-  },
-  {
-    "source" : "**/*.@(webp|woff2|js|css)",
-  "headers" : [ {
-    "key" : "Cache-Control",
-    "value" : "max-age=31536000,public"
-  } ]
-},
-{
-  "source" : "**/*.@(eot|otf|ttf|ttc|woff|woff2|font.css)",
-  "headers" : [ {
-    "key" : "Access-Control-Allow-Origin",
-    "value" : "*"
-  }
-]
-}
-,
-  {
-    "source" : "**/*.@(eot|otf|ttf|ttc|woff|woff2|font.css)",
-    "headers" : [ {
-      "key" : "Access-Control-Allow-Headers",
-      "value" : "Origin, X-Requested-With, Content-Type, Accept"
-    }
-]
-  }
-],
-"cleanUrls": true
+    "cleanUrls": true,
+    "trailingSlash": false
   }
 }
