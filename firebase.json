@@ -6,6 +6,323 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "redirects": [{
+        "source": "/twitter/*",
+        "destination": "https://twitter.com/yudete",
+        "type": 302
+      },
+      {
+        "source": "/youtube/*",
+        "destination": "https://www.youtube.com/channel/UCa0UEeTI-ZKejvlLVHPxX7w",
+        "type": 302
+      },
+      {
+        "source": "/yt/*",
+        "destination": "https://www.youtube.com/channel/UCa0UEeTI-ZKejvlLVHPxX7w",
+        "type": 302
+      },
+      {
+        "source": "/discord/*",
+        "destination": "http://discordapp.com/users/116124230243975173",
+        "type": 302
+      },
+      {
+        "source": "/twitch/*",
+        "destination": "https://twitch.tv/yude1119",
+        "type": 302
+      },
+      {
+        "source": "/instagram/*",
+        "destination": "https://instagram.com/yudetex",
+        "type": 302
+      },
+      {
+        "source": "/steam/*",
+        "destination": "https://steamcommunity.com/id/yudepoi",
+        "type": 302
+      }, {
+        "source": "/blog/*",
+        "destination": "https://blog.yude.moe/",
+        "type": 302
+      }, {
+        "source": "/peing/*",
+        "destination": "https://peing.net/yude",
+        "type": 302
+      }, {
+        "source": "/wishlist/*",
+        "destination": "https://amzn.asia/bSgrOMl",
+        "type": 302
+      }, {
+        "source": "/keybase/*",
+        "destination": "https://keybase.io/yude",
+        "type": 302
+      },
+      {
+        "source": "/misskey/*",
+        "destination": "https://misskey.io/@yude",
+        "type": 302
+      },
+      {
+        "source": "/bilibili/*",
+        "destination": "https://space.bilibili.com/446089772",
+        "type": 302
+      },
+      {
+        "source": "/reddit/*",
+        "destination": "https://www.reddit.com/user/yude1119",
+        "type": 302
+      },
+      {
+        "source": "/gitlab/*",
+        "destination": "https://gitlab.com/yude",
+        "type": 302
+      },
+      {
+        "source": "/lastfm/*",
+        "destination": "https://www.last.fm/ja/user/yude_stride",
+        "type": 302
+      },
+      {
+        "source": "/whowatch/*",
+        "destination": "https://whowatch.tv/profile/w:yude",
+        "type": 302
+      },
+      {
+        "source": "/shinchoku/*",
+        "destination": "https://shinchoku.net/users/yudete",
+        "type": 302
+      },
+      {
+        "source": "/wikipedia/*",
+        "destination": "https://ja.wikipedia.org/wiki/%E5%88%A9%E7%94%A8%E8%80%85:Yude1119",
+        "type": 302
+      },
+      {
+        "source": "/spotify/*",
+        "destination": "https://open.spotify.com/user/yude1119?si=mkpe_gHjSjatWcstDWkKbQ",
+        "type": 302
+      },
+      {
+        "source": "/pixiv/*",
+        "destination": "https://www.pixiv.net/member.php?id=17036889",
+        "type": 302
+      },
+      {
+        "source": "/amazon/*",
+        "destination": "https://amzn.asia/bSgrOMl",
+        "type": 302
+      },
+      {
+        "source": "/niconico/*",
+        "destination": "https://www.nicovideo.jp/user/22932031",
+        "type": 302
+      },
+      {
+        "source": "/nico/*",
+        "destination": "https://www.nicovideo.jp/user/22932031",
+        "type": 302
+      },
+      {
+        "source": "/osu/*",
+        "destination": "https://osu.ppy.sh/users/4617937",
+        "type": 302
+      },
+      {
+        "source": "/insta/*",
+        "destination": "https://instagram.com/yudetex",
+        "type": 302
+      },
+      {
+        "source": "/atcoder/*",
+        "destination": "https://atcoder.jp/users/yude",
+        "type": 302
+      },
+      {
+        "source": "/kakuyomu/*",
+        "destination": "https://kakuyomu.jp/users/yudetex",
+        "type": 302
+      },
+      {
+        "source": "/vimeo/*",
+        "destination": "https://vimeo.com/yude",
+        "type": 302
+      },
+      {
+        "source": "/donation",
+        "destination": "/donate",
+        "type": 301
+      },
+      {
+        "source": "/me",
+        "destination": "/profile",
+        "type": 301
+      },
+      {
+        "source": "/crowdin/*",
+        "destination": "https://crowdin.com/profile/yudecchi",
+        "type": 302
+      },
+      {
+        "source": "/mixer/*",
+        "destination": "https://mixer.com/yude",
+        "type": 302
+      },
+      {
+        "source": "/imgur/*",
+        "destination": "https://imgur.com/user/yude1119/posts",
+        "type": 302
+      },
+      {
+        "source": "/gravatar/*",
+        "destination": "https://ja.gravatar.com/yudete",
+        "type": 302
+      },
+      {
+        "source": "/speakerdeck/*",
+        "destination": "https://speakerdeck.com/yude",
+        "type": 302
+      },
+      {
+        "source": "/askfm/*",
+        "destination": "https://ask.fm/yude_point",
+        "type": 302
+      },
+      {
+        "source": "/ask/*",
+        "destination": "https://ask.fm/yude_point",
+        "type": 302
+      },
+      {
+        "source": "/stackoverflow/*",
+        "destination": "https://stackoverflow.com/users/11435653/yude",
+        "type": 302
+      },
+      {
+        "source": "/togetter/*",
+        "destination": "https://togetter.com/id/yudete",
+        "type": 302
+      },
+      {
+        "source": "/namemc/*",
+        "destination": "https://ja.namemc.com/profile/yude.1",
+        "type": 302
+      },
+      {
+        "source": "/dailymotion/*",
+        "destination": "https://www.dailymotion.com/yude_point",
+        "type": 302
+      },
+      {
+        "source": "/annict/*",
+        "destination": "https://annict.com/@yude",
+        "type": 302
+      },
+      {
+        "source": "/coderwall/*",
+        "destination": "https://coderwall.com/yude",
+        "type": 302
+      },
+      {
+        "source": "/nextcloud/*",
+        "destination": "https://cloud.yude.moe",
+        "type": 302
+      },
+      {
+        "source": "/cloud/*",
+        "destination": "https://cloud.yude.moe",
+        "type": 302
+      },
+      {
+        "source": "/github/*",
+        "destination": "https://github.com/yudemoe",
+        "type": 302
+      },
+      {
+        "source": "/diary/*",
+        "destination": "https://blog.yude.moe/",
+        "type": 302
+      },
+      {
+        "source": "/mutual",
+        "destination": "/banner",
+        "type": 301
+      },
+      {
+        "source": "/hatena/*",
+        "destination": "http://profile.hatena.ne.jp/yudetex/",
+        "type": 302
+      },
+      {
+        "source": "/myanimelist/*",
+        "destination": "https://myanimelist.net/profile/yude",
+        "type": 302
+      },
+      {
+        "source": "/mal/*",
+        "destination": "https://myanimelist.net/profile/yude",
+        "type": 302
+      },
+      {
+        "source": "/foursquare/*",
+        "destination": "https://ja.foursquare.com/yudete",
+        "type": 302
+      },
+      {
+        "source": "/4sq/*",
+        "destination": "https://ja.foursquare.com/yudete",
+        "type": 302
+      },
+      {
+        "source": "/swarm/*",
+        "destination": "https://ja.foursquare.com/yudete",
+        "type": 302
+      },
+      {
+        "source": "/nijie/*",
+        "destination": "https://nijie.info/members.php?id=1390736",
+        "type": 302
+      },
+      {
+        "source": "/smashcast/*",
+        "destination": "https://www.smashcast.tv/yude",
+        "type": 302
+      },
+      {
+        "source": "/npm/*",
+        "destination": "https://www.npmjs.com/~yude",
+        "type": 302
+      },
+      {
+        "source": "/twttr/*",
+        "destination": "https://twitter.com/yudete",
+        "type": 302
+      },
+      {
+        "source": "/tweet/*",
+        "destination": "https://twitter.com/yudete",
+        "type": 302
+      },
+      {
+        "source": "/paypal/*",
+        "destination": "https://paypal.me/yudemoe",
+        "type": 302
+      },
+      {
+        "source": "/archive/*",
+        "destination": "https://archive.yude.moe",
+        "type": 302
+      },
+      {
+        "source": "/tool/*",
+        "destination": "https://tools.yude.moe",
+        "type": 302
+      },
+      {
+        "source": "/tools/*",
+        "destination": "https://tools.yude.moe",
+        "type": 302
+      }
+    ],
     "headers": [{
         "source": "**/*.@(jpg|jpeg|gif|png)",
         "headers": [{
