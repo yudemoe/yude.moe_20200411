@@ -1,17 +1,8 @@
 {
     "version": 2,
     "name": "yudemoe",
-    "cleanUrls": true,
     "routes": [{
-            "handle": "filesystem"
-        },
-        {
-            "src": "/(.*)",
-            "status": 404,
-            "dest": "/404.html"
-        }
-    ],
-    "github": {
-        "silent": true
-    }
+        "src": "/*",
+        "dest": "/$1.html"
+    }]
 }
