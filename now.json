@@ -2,6 +2,14 @@
     "version": 2,
     "name": "yudemoe",
     "routes": [{
+            "src": "/",
+            "dest": "index.html"
+        },
+        {
+            "src": "^(.*)$",
+            "dest": "$1.html"
+        },
+        {
             "src": "/twitter",
             "status": 302,
             "headers": {
@@ -121,52 +129,10 @@
             }
         },
         {
-            "src": "/",
-            "status": 302,
-            "headers": {
-                "Location": ""
-            }
-        },
-        {
-            "src": "/about",
-            "status": 302,
-            "headers": {
-                "Location": "https://yude.moe/about"
-            }
-        },
-        {
-            "src": "/",
-            "status": 302,
-            "headers": {
-                "Location": ""
-            }
-        },
-        {
-            "src": "/",
-            "status": 302,
-            "headers": {
-                "Location": ""
-            }
-        },
-        {
-            "src": "/donate",
-            "status": 302,
-            "headers": {
-                "Location": "https://yude.moe/donate"
-            }
-        },
-        {
             "src": "/donation",
             "status": 302,
             "headers": {
                 "Location": "https://yude.moe/donate"
-            }
-        },
-        {
-            "src": "/banner",
-            "status": 302,
-            "headers": {
-                "Location": "https://yude.moe/banner/"
             }
         },
         {
