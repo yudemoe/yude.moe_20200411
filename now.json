@@ -1,16 +1,9 @@
 {
     "version": 2,
     "name": "yudemoe",
+    "public": "public",
     "cleanUrls": true,
     "routes": [{
-            "src": "/",
-            "dest": "index.html"
-        },
-        {
-            "src": "^(.*)$",
-            "dest": "$1.html"
-        },
-        {
             "src": "/twitter",
             "status": 302,
             "headers": {
