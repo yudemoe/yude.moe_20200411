@@ -1,8 +1,6 @@
 {
     "version": 2,
     "name": "yudemoe",
-    "public": "public",
-    "cleanUrls": true,
     "routes": [{
             "src": "/twitter",
             "status": 302,
