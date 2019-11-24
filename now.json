@@ -1,8 +1,4 @@
 {
     "version": 2,
-    "name": "yudemoe",
-    "routes": [{
-        "src": "/*",
-        "dest": "public/$1.html"
-    }]
+    "name": "yudemoe"
 }
