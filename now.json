@@ -230,7 +230,7 @@
             "handle": "filesystem"
         },
         {
-            "src": "/.*",
+            "src": "^(?!.*(png|jpg|webp|svg|ico|gif)$).+$",
             "status": 404,
             "dest": "/404"
         }
