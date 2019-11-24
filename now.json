@@ -1,4 +1,266 @@
 {
     "version": 2,
-    "name": "yudemoe"
+    "name": "yudemoe",
+    "public": "public",
+    "cleanUrls": true,
+    "routes": [{
+            "src": "/twitter",
+            "status": 302,
+            "headers": {
+                "Location": "https://twitter.com/yudete"
+            }
+        },
+        {
+            "src": "/wishlist",
+            "status": 302,
+            "headers": {
+                "Location": "https://amzn.asia/bSgrOMl"
+            }
+        },
+        {
+            "src": "/amazon",
+            "status": 302,
+            "headers": {
+                "Location": "https://amzn.asia/bSgrOMl"
+            }
+        },
+        {
+            "src": "/twitch",
+            "status": 302,
+            "headers": {
+                "Location": "https://twitch.tv/yude1119"
+            }
+        },
+        {
+            "src": "/discord",
+            "status": 302,
+            "headers": {
+                "Location": "http://discordapp.com/users/116124230243975173"
+            }
+        },
+        {
+            "src": "/youtube",
+            "status": 302,
+            "headers": {
+                "Location": "https://www.youtube.com/c/yudete"
+            }
+        },
+        {
+            "src": "/yt",
+            "status": 302,
+            "headers": {
+                "Location": "https://www.youtube.com/c/yudete"
+            }
+        },
+        {
+            "src": "/steam",
+            "status": 302,
+            "headers": {
+                "Location": "https://steamcommunity.com/id/yudepoi"
+            }
+        },
+        {
+            "src": "/misskey",
+            "status": 302,
+            "headers": {
+                "Location": "https://misskey.io/@yude"
+            }
+        },
+        {
+            "src": "/peing",
+            "status": 302,
+            "headers": {
+                "Location": "https://peing.net/yude"
+            }
+        },
+        {
+            "src": "/pixiv",
+            "status": 302,
+            "headers": {
+                "Location": "https://www.pixiv.net/member.php?id=17036889"
+            }
+        },
+        {
+            "src": "/niconico",
+            "status": 302,
+            "headers": {
+                "Location": "https://www.nicovideo.jp/user/22932031"
+            }
+        },
+        {
+            "src": "/nico",
+            "status": 302,
+            "headers": {
+                "Location": "https://www.nicovideo.jp/user/22932031"
+            }
+        },
+        {
+            "src": "/osu",
+            "status": 302,
+            "headers": {
+                "Location": "https://osu.ppy.sh/users/4617937"
+            }
+        },
+        {
+            "src": "/blog",
+            "status": 302,
+            "headers": {
+                "Location": "https://blog.yude.moe/"
+            }
+        },
+        {
+            "src": "/instagram",
+            "status": 302,
+            "headers": {
+                "Location": "https://instagram.com/yudetex"
+            }
+        },
+        {
+            "src": "/insta",
+            "status": 302,
+            "headers": {
+                "Location": "https://instagram.com/yudetex"
+            }
+        },
+        {
+            "src": "/",
+            "status": 302,
+            "headers": {
+                "Location": ""
+            }
+        },
+        {
+            "src": "/about",
+            "status": 302,
+            "headers": {
+                "Location": "https://yude.moe/about"
+            }
+        },
+        {
+            "src": "/",
+            "status": 302,
+            "headers": {
+                "Location": ""
+            }
+        },
+        {
+            "src": "/",
+            "status": 302,
+            "headers": {
+                "Location": ""
+            }
+        },
+        {
+            "src": "/donate",
+            "status": 302,
+            "headers": {
+                "Location": "https://yude.moe/donate"
+            }
+        },
+        {
+            "src": "/donation",
+            "status": 302,
+            "headers": {
+                "Location": "https://yude.moe/donate"
+            }
+        },
+        {
+            "src": "/banner",
+            "status": 302,
+            "headers": {
+                "Location": "https://yude.moe/banner/"
+            }
+        },
+        {
+            "src": "/github",
+            "status": 302,
+            "headers": {
+                "Location": "https://github.com/yudemoe"
+            }
+        },
+        {
+            "src": "/nijie",
+            "status": 302,
+            "headers": {
+                "Location": "https://nijie.info/members.php?id=1390736"
+            }
+        },
+        {
+            "src": "/iwara",
+            "status": 302,
+            "headers": {
+                "Location": "https://www.iwara.tv/users/yude"
+            }
+        },
+        {
+            "src": "/irori",
+            "status": 302,
+            "headers": {
+                "Location": "https://irori.app/@yude"
+            }
+        },
+        {
+            "src": "/atnd",
+            "status": 302,
+            "headers": {
+                "Location": "https://atnd.org/users/330315"
+            }
+        },
+        {
+            "src": "/spotify",
+            "status": 302,
+            "headers": {
+                "Location": "https://open.spotify.com/user/yude1119?si=mkpe_gHjSjatWcstDWkKbQ"
+            }
+        },
+        {
+            "src": "/meme",
+            "status": 302,
+            "headers": {
+                "Location": "https://knowyourmeme.com/users/yude1119"
+            }
+        },
+        {
+            "src": "/bilibili",
+            "status": 302,
+            "headers": {
+                "Location": "https://space.bilibili.com/446089772"
+            }
+        },
+        {
+            "src": "/atcoder",
+            "status": 302,
+            "headers": {
+                "Location": "https://atcoder.jp/users/yude"
+            }
+        },
+        {
+            "src": "/kakuyomu",
+            "status": 302,
+            "headers": {
+                "Location": "https://kakuyomu.jp/users/yudetex"
+            }
+        },
+        {
+            "src": "/vimeo",
+            "status": 302,
+            "headers": {
+                "Location": "https://vimeo.com/yude"
+            }
+        },
+        {
+            "src": "/reddit",
+            "status": 302,
+            "headers": {
+                "Location": "https://www.reddit.com/user/yude1119"
+            }
+        },
+        {
+            "src": "/note",
+            "status": 302,
+            "headers": {
+                "Location": "https://note.mu/yude1119"
+            }
+        }
+    ]
 }
