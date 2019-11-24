@@ -3,6 +3,6 @@
     "name": "yudemoe",
     "routes": [{
         "src": "/*",
-        "dest": "/$1.html"
+        "dest": "public/$1.html"
     }]
 }
