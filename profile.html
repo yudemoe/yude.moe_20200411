@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ja">
 
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,9 +16,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css"
     integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print"
     onload="this.media='all'" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
-    media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" media="print"
+    onload="this.media='all'" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" media="print"
     onload="this.media='all'" />
@@ -132,35 +132,58 @@
       <div class="card" style="background-color: #31353F">
         <div class="card-body">
           <div class="container">
-            <div class="row justify-content-start">
-              <div class="col-6">
+            <div class="row">
+              <div class="col-sm-6">
                 <img src="assets/mel-full.jpg" alt="yude's avatar"
                   style="border-radius: 10px;margin-bottom:10px;height:100px;width:100px">
                 <p
                   style="font-family: 'Morning Star';font-size: 400%;background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;letter-spacing: 1px">
                   yude</p>
                 <p style="color:#AAB1B0"><i class="fas fa-birthday-cake"></i> <strong>November 19th&#44
-                    2001</strong>
+                    2001</strong> (18 y/o)
                 </p>
                 <p style="color:#AAB1B0;margin-top: -14px"><i class="fas fa-map-marker-alt"></i>
                   <strong>Tottori&#44 Japan</strong></p>
               </div>
-              <div class="col-6">
-
+              <div class="col-sm-6" style="text-align:left">
+                <div class="card" style="background-color: #1f2430">
+                  <div class="card-body" id="discord">
+                    <p>
+                      <span style="font-size: 1.4em"><i style="color: status" class="fab fa-discord"></i></span>
+                      <span class="discord" data-clipboard-text="yude#3205" style="color: white">
+                        yude<span class="text-muted">#3205</span>
+                      </span>
+                    </p>
+                    <p>
+                      <span style="font-size: 1.4em"><i style="color: #1da1f2" class="fab fa-twitter"></i></span>
+                      <span><a style="color: white" href="https://twitter.com/yudete">
+                          <span class="text-muted"> @</span>yudete</a>
+                    </p>
+                    <p>
+                      <span style="font-size: 1.4em"><i style="color: #c7c5c2" class="fab fa-steam"></i></span>
+                      <span><a style="color: white" href="//steamcommunity.com/id/yudepoi">yudepoi</a
+                          style="color: white"></span>
+                    </p>
+                    <p>
+                      <span style="font-size: 1.4em"><i style="color: #a8b480" class="far fa-envelope"></i></span>
+                      <span><a style="color: white" href="mailto:yu@yude.moe">yu@yude.moe</a
+                          style="color: white"></span>
+                    </p>
+                    <p>
+                      <span style="font-size: 1.4em"><i style="color: #ff6f21" class="fab fa-keybase"></i></span>
+                      <span><a style="color: white" href="https://keybase.io/yude">yude</a style="color: white"></span>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
       <div class="card" style="background-color: #31353F;margin-top: 10px">
         <div class="card-body">
           <h2 style="color: #c8c8c8"><i class="fas fa-link"></i> リンク</h2>
           <div class="row">
-            <div class="box">
-              <h3 class="hvr-bounce-in"><i class="fab fa-twitter"></i></h3>
-              <p><a href="//twitter.com/yudete">@yudete</a></p>
-            </div>
             <div class="box">
               <h3 class="hvr-bounce-in"><i class="fab fa-twitter"></i></h3>
               <p><a href="//twitter.com/lucknetter">@lucknetter</a></p>
@@ -174,10 +197,6 @@
               <p><a href="//twitter.com/yudemoe">@yudemoe</a></p>
             </div>
             <div class="box">
-              <h3 class="hvr-bounce-in"><i class="fab fa-discord"></i></h3>
-              <p><a href="http://discordapp.com/users/116124230243975173">yude#3205</a></p>
-            </div>
-            <div class="box">
               <h3 class="hvr-bounce-in"><i class="fab fa-twitch"></i></h3>
               <p><a href="//twitch.tv/yude1119">yude1119</a></p>
             </div>
@@ -188,10 +207,6 @@
             <div class="box">
               <h3 class="hvr-bounce-in"><i class="fab fa-youtube"></i></h3>
               <p><a href="//www.youtube.com/c/yudete">c/yudete</a></p>
-            </div>
-            <div class="box">
-              <h3 class="hvr-bounce-in"><i class="fab fa-steam"></i></h3>
-              <p><a href="//steamcommunity.com/id/yudepoi">yudepoi</a></p>
             </div>
             <div class="box">
               <h3 class="hvr-bounce-in"><i class="fab fa-tumblr"></i></h3>
@@ -234,10 +249,6 @@
             <div class="box">
               <h3 class="hvr-bounce-in"><i class="fab fa-spotify"></i></h3>
               <p><a href="https://open.spotify.com/user/yude1119?si=mkpe_gHjSjatWcstDWkKbQ">yude1119</a></p>
-            </div>
-            <div class="box">
-              <h3 class="hvr-bounce-in"><i class="fab fa-keybase"></i></h3>
-              <p><a href="https://keybase.io/yude">yude</a></p>
             </div>
             <div class="box">
               <img alt="Annict" src="assets/brand/annict.png" height=30px width=30px>
@@ -475,24 +486,24 @@
               <p><a href="https://mast.moe/@yude">mast.moe/<br>@yude</a></p>
             </div>
             <div class="box">
-              <img alt="ニジエ"" src=" assets/brand/nijie.png" height=30px width=30px>
+              <img alt="ニジエ" src=" assets/brand/nijie.png" height=30px width=30px>
               <p><a href="https://nijie.info/members.php?id=1390736">yude (1390736)</a></p>
             </div>
             <div class="box">
-              <img alt="Smashcast"" src=" assets/brand/smashcast.png" height=30px width=30px>
+              <img alt="Smashcast" src=" assets/brand/smashcast.png" height=30px width=30px>
               </h3>
               <p><a href="https://www.smashcast.tv/yude">yude</a></p>
             </div>
             <div class="box">
-              <img alt="Irori"" src=" assets/brand/irori.svg" height=30px width=30px>
+              <img alt="Irori" src=" assets/brand/irori.svg" height=30px width=30px>
               <p><a href="https://irori.app/@yude">@yude</a></p>
             </div>
             <div class="box">
-              <img alt="Iwara"" src=" assets/brand/iwara.ico" height=30px width=30px>
+              <img alt="Iwara" src=" assets/brand/iwara.ico" height=30px width=30px>
               <p><a href="https://www.iwara.tv/users/yude">yude</a></p>
             </div>
             <div class="box">
-              <img alt="Chordify"" src=" assets/brand/chordify.webp" height=30px width=30px>
+              <img alt="Chordify" src=" assets/brand/chordify.webp" height=30px width=30px>
               </h3>
               <p><a href="https://chordify.net/profile/5d57fef4786de0450000db60">yude</a></p>
             </div>
@@ -536,6 +547,21 @@
               <div class="card" style="margin-top:10px">
                 <div class="row no-gutters align-items-center">
                   <div class="col-md-2">
+                    <h3><i style="color: #7fad5e" class="fas fa-cube"></i></h3>
+                  </div>
+                  <div class="col-md-10" style="background-color:black">
+                    <div class="card-body">
+                      <h5 class="card-title" style="margin-bottom: 0;">Minecraft</h5>
+                      <p style="margin-bottom: 0.2em"><small class="text-muted">Mojang</small></p>
+                      <a href="https://ja.namemc.com/profile/yude.0"><code style="color: #E83E8C">yude</code></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="margin-top:10px">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-md-2">
                     <h3><i style="color: palevioletred" class="fas fa-star"></i></h3>
                   </div>
                   <div class="col-md-10" style="background-color:black">
@@ -543,7 +569,8 @@
                       <h5 class="card-title" style="margin-bottom: 0;">バンドリ！<span
                           style="white-space: pre;">ガールズバンドパーティ！</span></h5>
                       <p style="margin-bottom: 0.2em"><small class="text-muted">ブシロードメディア</small></p>
-                      <code>76306887</code> <button class="btn dayo" data-clipboard-text="76306887"><i
+                      <code>76306887</code> <button data-toggle="tooltip" data-trigger="click" data-placement="top"
+                        title="コピーしました！" class="btn dayo" data-clipboard-text="76306887"><i
                           class="fas fa-paste"></i></button>
                     </div>
                   </div>
@@ -559,7 +586,8 @@
                     <div class="card-body">
                       <h5 class="card-title" style="margin-bottom: 0;">モンスターストライク</h5>
                       <p style="margin-bottom: 0.2em"><small class="text-muted">XFLAG</small></p>
-                      <span style="white-space: pre;"><code>330,136,392,123</code> <button class="btn dayo"
+                      <span style="white-space: pre;"><code>330,136,392,123</code> <button data-toggle="tooltip"
+                          data-trigger="click" data-placement="top" title="コピーしました！" class="btn dayo"
                           data-clipboard-text="330136392123"><i class="fas fa-paste"></i></button></span>
                     </div>
                   </div>
@@ -575,8 +603,9 @@
                     <div class="card-body">
                       <h5 class="card-title" style="margin-bottom: 0;">CHUNITHM-NET</h5>
                       <p style="margin-bottom: 0.2em"><small class="text-muted">SEGA</small></p>
-                      <code>5061450737648</code> <button class="btn dayo" data-clipboard-text="5061450737648"><i
-                          class="fas fa-paste"></i></button>
+                      <code>5061450737648</code>
+                      <button data-toggle="tooltip" data-trigger="click" data-placement="top" title="コピーしました！"
+                        class="btn dayo" data-clipboard-text="5061450737648"><i class="fas fa-paste"></i></button>
                     </div>
                   </div>
                 </div>
@@ -591,7 +620,8 @@
                     <div class="card-body">
                       <h5 class="card-title" style="margin-bottom: 0;">ドンだーひろば</h5>
                       <p style="margin-bottom: 0.2em"><small class="text-muted">ナムコ</small></p>
-                      <code>854214736679</code> <button class="btn dayo" data-clipboard-text="854214736679"><i
+                      <code>854214736679</code> <button data-toggle="tooltip" data-trigger="click" data-placement="top"
+                        title="コピーしました！" class="btn dayo" data-clipboard-text="854214736679"><i
                           class="fas fa-paste"></i></button>
                     </div>
                   </div>
@@ -607,7 +637,8 @@
                     <div class="card-body">
                       <h5 class="card-title" style="margin-bottom: 0;">逆転オセロニア</h5>
                       <p style="margin-bottom: 0.2em"><small class="text-muted">DeNA</small></p>
-                      <code>580109295314</code> <button class="btn dayo" data-clipboard-text="580109295314"><i
+                      <code>580109295314</code> <button data-toggle="tooltip" data-trigger="click" data-placement="top"
+                        title="コピーしました！" class="btn dayo" data-clipboard-text="580109295314"><i
                           class="fas fa-paste"></i></button>
                     </div>
                   </div>
@@ -628,10 +659,44 @@
             style="display: inline-block;color:black">About yude.moe</span></a></p>
     </div>
   </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
   <script>
     var clipboard = new ClipboardJS('.btn');
+  </script>
+  <script defer>
+    $('[data-toggle="tooltip"]').tooltip();
+    $(document).on('show.bs.tooltip', function (e) {
+      setTimeout(function () {
+        $('[data-toggle="tooltip"]').tooltip('hide');
+      }, 400);
+    });
+  </script>
+  <script await>
+    var req = new XMLHttpRequest();
+    req.open('GET', 'https://yude.glitch.me', true);
+    req.onload = function () {
+      var status = this.response;
+      if (status == "online") {
+        var color = '#43b581'
+      }
+      if (status == "idle") {
+        var color = '#faa61a'
+      }
+      if (status == "dnd") {
+        var color = '#f04747'
+      }
+      if (status == "offline") {
+        var color = '#747f8d'
+      }
+      var str = document.getElementById("discord").innerHTML;
+      str = str.replace("status", color);
+      document.getElementById("discord").innerHTML = str;
+      console.log(status);
+    }
+    req.send();
   </script>
 </body>
 
