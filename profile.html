@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="ja">
 
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -149,15 +148,16 @@
                 <div class="card" style="background-color: #1f2430">
                   <div class="card-body" id="discord">
                     <p>
-                      <span style="font-size: 1.4em"><i style="color: status" class="fab fa-discord"></i></span>
-                      <span class="discord" data-clipboard-text="yude#3205" style="color: white">
-                        yude<span class="text-muted">#3205</span>
+                      <div style="color: white" class="spinner-border" role="status"><span
+                          class="sr-only">Loading...</span></div>
+                      <span class="discord" data-clipboard-text="yude#3205" style="color: white">yude<span
+                          class="text-muted">#3205</span>
                       </span>
                     </p>
                     <p>
                       <span style="font-size: 1.4em"><i style="color: #1da1f2" class="fab fa-twitter"></i></span>
-                      <span><a style="color: white" href="https://twitter.com/yudete">
-                          <span class="text-muted"> @</span>yudete</a>
+                      <span><a style="color: white" href="https://twitter.com/yudete"><span
+                            class="text-muted">@</span>yudete</a>
                     </p>
                     <p>
                       <span style="font-size: 1.4em"><i style="color: #c7c5c2" class="fab fa-steam"></i></span>
@@ -692,7 +692,9 @@
         var color = '#747f8d'
       }
       var str = document.getElementById("discord").innerHTML;
-      str = str.replace("status", color);
+      str = str.replace(
+        '<div style="color: white" class="spinner-border" role="status"><span class="sr-only">Loading...</span></div>',
+        '<span style="font-size: 1.4em"><i style="color: ' + color + '" class="fab fa-discord"></i></span>');
       document.getElementById("discord").innerHTML = str;
       console.log(status);
     }
