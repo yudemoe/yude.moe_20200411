@@ -2,17 +2,6 @@
 <html lang="ja">
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117103073-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-		gtag('config', 'UA-117103073-1');
-	</script>
 	<title>❤ 寄付 | yude.moe</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -57,40 +46,14 @@
 		}
 
 		body {
-			font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Roboto Mono', "Noto Sans JP"
-		}
-
-		canvas {
-			display: block;
-		}
-
-		#particles-js {
+			font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Roboto Mono', "Noto Sans JP";
 			background-color: #262a2f;
-			position: fixed;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			z-index: 0;
-		}
-
-		#overlay {
-			position: relative;
-		}
-
-		.text {
-			position: absolute;
-			right: 5px;
-			bottom: 10px;
-			font-size: 20px;
-			line-height: 130%;
 		}
 	</style>
 </head>
 
 <body>
-	<div id="particles-js"></div>
-	<div id="overlay" class="container" style="text-align:center">
+	<div class="container" style="text-align:left">
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item" aria-current="page"><a href="../" style="color:#778899"><i
@@ -99,32 +62,105 @@
 
 			</ol>
 		</nav>
-		<div style="position:relative;pointer-events:auto">
+		<div class="card">
+			<div class="card-body" style="text-align:center">
+				<h5 class="card-title">寄付</h5>
+				<h6 class="card-subtitle mb-2 text-muted">Make a donation to yude.moe</h6>
+				<p class="card-text">以下の方法で、yude.moe に寄付することができます。</p>
+			</div>
+		</div>
+		<div class="card-columns" style="margin-top:10px">
 			<div class="card">
 				<div class="card-body">
-					<h5 class="card-title">寄付</h5>
-					<h6 class="card-subtitle mb-2 text-muted">Make a donation to yude.moe</h6>
-					<p class="card-text">以下の方法で、yude.moe に寄付することができます。</p>
+					<h5 class="card-title"><i class="fab fa-paypal"></i>
+						PayPal</h5>
 					<a href="https://paypal.me/yudemoe" class="card-link"><i class="fab fa-paypal"></i>
-						PayPal.Me</a>
-					<hr>
-					<i class="fas fa-qrcode"></i> Kyash <code>yude</code></p>
+						PayPal.Me/yudemoe</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fab fa-amazon"></i>
+						Amazon ほしい物リスト</h5>
+
+					<a href="https://www.amazon.jp/hz/wishlist/ls/8WTKCPWKOJ2N?ref_=wl_share" class="card-link"><i
+							class="fab fa-amazon"></i>
+						yude's Amazon Wishlist</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fas fa-qrcode"></i> Kyash <small>Kyash ID:
+							<code>yude</code></small>
+						<button data-toggle="tooltip" data-trigger="click" data-placement="top" title="✔ コピーしました！"
+							class="btn dayo" data-clipboard-text="yude"><i class="fas fa-paste"></i></button>
+					</h5>
 					<img style="margin-top: -10px;max-height: 300px" alt="Kyash QR" src="assets/kyash.jpg">
+
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fab fa-bitcoin"></i> Bitcoin <small>BTC</small></h5>
+					<code>38vFuUmkGD1U1GTb4BjcZybYZLnZ1YRszA</code>
+					<button data-toggle="tooltip" data-trigger="click" data-placement="top" title="✔ コピーしました！"
+						class="btn dayo" data-clipboard-text="38vFuUmkGD1U1GTb4BjcZybYZLnZ1YRszA"><i
+							class="fas fa-paste"></i></button>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fas fa-money-bill-wave-alt"></i> Zcash <small>ZEC</small></h5>
+					<code>t1cqyUcdrzYVZv5eRBRt96xHzqmeLnyzEwq</code>
+					<button data-toggle="tooltip" data-trigger="click" data-placement="top" title="✔ コピーしました！"
+						class="btn dayo" data-clipboard-text="t1cqyUcdrzYVZv5eRBRt96xHzqmeLnyzEwq"><i
+							class="fas fa-paste"></i></button>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fas fa-rocket"></i> Stellar Lumens <small>XLM</small></h5>
+					<li>Payment address</li>
+					<code>yude*keybase.io</code>
+					<button data-toggle="tooltip" data-trigger="click" data-placement="top" title="✔ コピーしました！"
+						class="btn dayo" data-clipboard-text="yude*keybase.io"><i class="fas fa-paste"></i></button>
+					<li>Stellar account ID</li>
+					<code>GCWSJX4NL7TO3QOYR7CDJPZBJEEUGN6YIIGSK54ZEQYGA5TYJ57SSR2S</code>
+					<button data-toggle="tooltip" data-trigger="click" data-placement="top" title="✔ コピーしました！"
+						class="btn dayo"
+						data-clipboard-text="GCWSJX4NL7TO3QOYR7CDJPZBJEEUGN6YIIGSK54ZEQYGA5TYJ57SSR2S"><i
+							class="fas fa-paste"></i></button>
 				</div>
 			</div>
 		</div>
-		<div class="mx-auto" style="width:90%;margin-top:5%;text-align:center">
-			<hr>
-			<p style="color: gray; font-family: 'Roboto Mono'"><span style="display: inline-block">Made by <a
-						style="color:black" href="https://twitter.com/yudete">yude</a>.</span> | <a href="about"><span
-						style="display: inline-block;color:black">About yude.moe</span></a></p>
-		</div>
+	</div>
+	<div class="mx-auto" style="width:90%;margin-top:5%;text-align:center">
+		<hr>
+		<p style="color: gray; font-family: 'Roboto Mono'"><span style="display: inline-block">Made by <a
+					style="color:black" href="https://twitter.com/yudete">yude</a>.</span> | <a href="about"><span
+					style="display: inline-block;color:black">About yude.moe</span></a></p>
+	</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"
 		integrity="sha256-OUFW7hFO0/r5aEGTQOz9F/aXQOt+TwqI1Z4fbVvww04=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"
+		integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+	<script async>
+		var clipboard = new ClipboardJS('.btn');
+	</script>
+	<script async>
+		$('[data-toggle="tooltip"]').tooltip();
+		$(document).on('show.bs.tooltip', function (e) {
+			setTimeout(function () {
+				$('[data-toggle="tooltip"]').tooltip('hide');
+			}, 400);
+		});
+	</script>
 </body>
 
 </html>
