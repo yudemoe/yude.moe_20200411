@@ -15,7 +15,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css"
     integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print"
     onload="this.media='all'" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" media="print"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" media="print"
     onload="this.media='all'" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" media="print"
@@ -568,9 +569,9 @@
                     <div class="card-body">
                       <h5 class="card-title" style="margin-bottom: 0;">バンドリ！<span
                           style="white-space: pre;">ガールズバンドパーティ！</span></h5>
-                      <p style="margin-bottom: 0.2em"><small class="text-muted">ブシロードメディア</small></p>
+                      <p style="margin-bottom: 0.2em"><small class="text-muted">ブシモ</small></p>
                       <code>76306887</code> <button data-toggle="tooltip" data-trigger="click" data-placement="top"
-                        title="コピーしました！" class="btn dayo" data-clipboard-text="76306887"><i
+                        title="✔ コピーしました！" class="btn dayo" data-clipboard-text="76306887"><i
                           class="fas fa-paste"></i></button>
                     </div>
                   </div>
@@ -587,7 +588,7 @@
                       <h5 class="card-title" style="margin-bottom: 0;">モンスターストライク</h5>
                       <p style="margin-bottom: 0.2em"><small class="text-muted">XFLAG</small></p>
                       <span style="white-space: pre;"><code>330,136,392,123</code> <button data-toggle="tooltip"
-                          data-trigger="click" data-placement="top" title="コピーしました！" class="btn dayo"
+                          data-trigger="click" data-placement="top" title="✔ コピーしました！" class="btn dayo"
                           data-clipboard-text="330136392123"><i class="fas fa-paste"></i></button></span>
                     </div>
                   </div>
@@ -604,7 +605,7 @@
                       <h5 class="card-title" style="margin-bottom: 0;">CHUNITHM-NET</h5>
                       <p style="margin-bottom: 0.2em"><small class="text-muted">SEGA</small></p>
                       <code>5061450737648</code>
-                      <button data-toggle="tooltip" data-trigger="click" data-placement="top" title="コピーしました！"
+                      <button data-toggle="tooltip" data-trigger="click" data-placement="top" title="✔ コピーしました！"
                         class="btn dayo" data-clipboard-text="5061450737648"><i class="fas fa-paste"></i></button>
                     </div>
                   </div>
@@ -621,7 +622,7 @@
                       <h5 class="card-title" style="margin-bottom: 0;">ドンだーひろば</h5>
                       <p style="margin-bottom: 0.2em"><small class="text-muted">ナムコ</small></p>
                       <code>854214736679</code> <button data-toggle="tooltip" data-trigger="click" data-placement="top"
-                        title="コピーしました！" class="btn dayo" data-clipboard-text="854214736679"><i
+                        title="✔ コピーしました！" class="btn dayo" data-clipboard-text="854214736679"><i
                           class="fas fa-paste"></i></button>
                     </div>
                   </div>
@@ -638,7 +639,7 @@
                       <h5 class="card-title" style="margin-bottom: 0;">逆転オセロニア</h5>
                       <p style="margin-bottom: 0.2em"><small class="text-muted">DeNA</small></p>
                       <code>580109295314</code> <button data-toggle="tooltip" data-trigger="click" data-placement="top"
-                        title="コピーしました！" class="btn dayo" data-clipboard-text="580109295314"><i
+                        title="✔ コピーしました！" class="btn dayo" data-clipboard-text="580109295314"><i
                           class="fas fa-paste"></i></button>
                     </div>
                   </div>
@@ -660,13 +661,18 @@
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-  <script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"
+    integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+    integrity="sha256-OUFW7hFO0/r5aEGTQOz9F/aXQOt+TwqI1Z4fbVvww04=" crossorigin="anonymous"></script>
+  </script>
+  <script async>
     var clipboard = new ClipboardJS('.btn');
   </script>
-  <script defer>
+  <script async>
     $('[data-toggle="tooltip"]').tooltip();
     $(document).on('show.bs.tooltip', function (e) {
       setTimeout(function () {
@@ -696,7 +702,6 @@
         '<div style="color: white" class="spinner-border" role="status"><span class="sr-only">Loading...</span></div>',
         '<span style="font-size: 1.4em"><i style="color: ' + color + '" class="fab fa-discord"></i></span>');
       document.getElementById("discord").innerHTML = str;
-      console.log(status);
     }
     req.send();
   </script>

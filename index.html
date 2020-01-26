@@ -24,9 +24,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css"
 		integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print"
 		onload="this.media='all'" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
-		media="print" onload="this.media='all'" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" media="print"
+		onload="this.media='all'" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
 		integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" media="print"
 		onload="this.media='all'" />
@@ -62,26 +62,14 @@
 		}
 
 		body {
-			font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Roboto Mono', "Noto Sans JP"
+			font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Roboto Mono', "Noto Sans JP";
+			background-color: #262a2f;
 		}
 
 		canvas {
 			display: block;
 		}
 
-		#particles-js {
-			background-color: #262a2f;
-			position: fixed;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			z-index: 0;
-		}
-
-		#overlay {
-			position: relative;
-		}
 
 		.text {
 			position: absolute;
@@ -109,16 +97,16 @@
 </head>
 
 <body>
-	<div id="particles-js"></div>
-	<div id="overlay" class="container" style="text-align:center">
+	<div class="container" style="text-align:center">
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item active" aria-current="page"><i class="fas fa-home"></i> yude.moe</li>
 			</ol>
 		</nav>
-		<div style="position:relative;pointer-events:auto">
+		<div style="pointer-events:auto">
 			<div class="card bg">
-				<div class="card-body">
+				<div id="particles-js" style="position:absolute; width:100%; height: 100%; z-index:0"></div>
+				<div class="card-body" style="z-index:1">
 					<h5 class="card-title animated infinite rubberBand" style="text-shadow:4px 4px 3px; color: #FF9819">
 						<strong>yude.moe へようこそ!</strong></h5>
 					<h6 class="card-subtitle mb-2 text-muted">Welcome to yude.moe!</h6>
@@ -137,10 +125,9 @@
 						style="display: inline-block;color:#20363F"><i class="fab fa-github"></i> GitHub</a>
 					<a href="https://discord.gg/X6srY7X" class="card-link"
 						style="display: inline-block;color:#20363F"><i class="fab fa-discord"></i> Discord</a>
+					<a href="stats/" class="card-link" style="display: inline-block;color:#20363F"><i
+							class="fas fa-check"></i> サーバー情報</a>
 				</div>
-				<span style="text-align:right">Background by <a style="color:#20363F"
-						href="https://twitter.com/hikaru_riv"><i class="fab fa-twitter"></i> @hikaru_riv</a>.
-					Thanks!</span>
 			</div>
 			<div class="mx-auto" style="width:90%;margin-top:5%;text-align:center">
 				<hr>
@@ -150,14 +137,18 @@
 			</div>
 		</div>
 	</div>
-	<script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 	</script>
-	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-	</script>
-	<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+		integrity="sha256-OUFW7hFO0/r5aEGTQOz9F/aXQOt+TwqI1Z4fbVvww04=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
+		integrity="sha256-+u54FaX9J+k40eAcg5K2YzICSQjrEYBI9gju5nE3HfY=" crossorigin="anonymous"></script>
+	<script>
+		/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+		particlesJS.load('particles-js', 'assets/particlesjs-config.json', function () {
+			console.log('callback - particles.js config loaded');
+		});
 	</script>
 </body>
 
