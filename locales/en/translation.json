@@ -1,0 +1,38 @@
+{
+    "index": {
+        "mutual_link": "Mutual Links",
+        "blog": "Blog",
+        "profile": "Profile",
+        "welcome": "Welcome to yude.moe!",
+        "donate": "Donate",
+        "file_sharing": "File Sharing",
+        "sharing": "Sharing",
+        "link": "Links",
+        "hosting": "Hosting",
+        "shorten": "Shortener",
+        "text_sharing": "Text Sharing",
+        "server_info": "Server Status",
+        "about": "About yude.moe",
+        "copy": "Copy"
+    },
+    "banner": {
+        "links_title": "Our banners",
+        "contact_1": "If you feel like being shown on this page, please contact me via Twitter ",
+        "contact_2": "."
+    },
+    "profile": {
+        "title": "yude's profile",
+        "game": "Games"
+    },
+    "about": {
+        "about_this": "About this website",
+        "history": "History",
+        "others": "Others",
+        "thanks": "Special Thanks",
+        "assets": "Assets",
+        "tech": "Technologies",
+        "contact": "Contact",
+        "top_page_1": " front page is under the ",
+        "top_page_2": "."
+    }
+}
