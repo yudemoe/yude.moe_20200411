@@ -280,61 +280,12 @@ template: default.html
 								<li><a href="https://github.com/ldidry/lstu"><i class="fas fa-cut"></i>
 										ldidry/lstu: Lightweight URL shortener
 									</a></li>
+								<li><img src="../assets/flag/japan.svg" width=18px height=18px> Icons made by <a
+										href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
+									<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></li>
+								<li><img src="../assets/flag/united-states.svg" width=18px height=18px> Icons made by <a
+										href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
+									<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></li>
 							</ul>
 						</ul>
 					</div>
-				</div>
-				<div class="mx-auto" style="width: 70%;margin-top:5%;text-align:center">
-					<hr>
-					<p style="color: gray; font-family: 'Roboto Mono'"><span style="display: inline-block">Made by <a
-								style="color:black" href="https://twitter.com/yudete">yude</a>.</span> | <a
-							href="about"><span style="display: inline-block;color:black">
-								<span data-i18n="index.about"></span>
-							</span></a></p>
-				</div>
-			</div>
-		</div>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-		</script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"
-			integrity="sha256-OUFW7hFO0/r5aEGTQOz9F/aXQOt+TwqI1Z4fbVvww04=" crossorigin="anonymous"></script>
-		</script>
-		<!-- i18n -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/19.1.0/i18next.min.js"
-			integrity="sha256-42pTqClxbTQsNYA3/v6RFFKAzA2zwfjq47JQNHvoNR4=" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"
-			integrity="sha256-Vo1wrHjny4hQDPA9SwBUpG/EBawhvUusdqRHb3Ia7x8=" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-xhr-backend/3.2.2/i18nextXHRBackend.min.js"
-			integrity="sha256-dxNIQVw/2RvuqZbPG4/pe6P0YpTY5mg7/ppSKWLjN8Y=" crossorigin="anonymous"></script>
-		<script>
-			var urlParam = location.search.substring(1);
-			if (urlParam) {
-				var param = urlParam.split('&');
-				var paramArray = [];
-				for (i = 0; i < param.length; i++) {
-					var paramItem = param[i].split('=');
-					paramArray[paramItem[0]] = paramItem[1];
-				}
-				var lang = paramArray.lang
-			} else {
-				var lang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
-				lang = lang.split("-")[0];
-			}
-			i18next.use(i18nextXHRBackend).init({
-				lng: lang,
-				debug: false,
-				fallbackLng: false,
-				defaultLng: 'en',
-				backend: {
-					loadPath: '../locales/{{lng}}/translation.json'
-				}
-			}, function (err, t) {
-				jqueryI18next.init(i18next, $);
-				$("[data-i18n]").localize();
-			});
-			console.log("Detected language is " + lang + ".");
-		</script>
-</body>
-
-</html>
