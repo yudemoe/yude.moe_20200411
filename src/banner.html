@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<title>🔗 相互リンク | yude.moe</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+	<link rel="dns-prefetch" href="//code.jquery.com">
+	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto+Mono&display=swap" rel="stylesheet"
+		media="print" onload="this.media='all'" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css"
+		integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print"
+		onload="this.media='all'" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" media="print"
+		onload="this.media='all'" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+		integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" media="print"
+		onload="this.media='all'" />
+	<link rel="icon" href="assets/favicon.ico">
+	<meta property="og:title" content="🔗 相互リンク | yude.moe" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://yude.moe/banner" />
+	<meta property="og:image" content="https://yude.moe/assets/mel-full.jpg" />
+	<meta property="og:description" content="🔗 相互リンクの一覧と yude.moe のバナー | Mutual links and banner of yude.moe" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@yudemoe" />
+	<style>
+		@font-face {
+			font-family: 'Font Awesome 5 Brands';
+			font-style: normal;
+			font-weight: 400;
+			src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-brands-400.woff2") format("woff2");
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Font Awesome 5 Free';
+			font-style: normal;
+			font-weight: 900;
+			src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-solid-900.woff2") format("woff2");
+			font-display: swap;
+		}
+
+		body {
+			font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Roboto Mono', "Noto Sans JP"
+		}
+
+		canvas {
+			display: block;
+		}
+
+		#particles-js {
+			background-color: #262a2f;
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 0;
+		}
+
+		#overlay {
+			position: relative;
+		}
+
+		.text {
+			position: absolute;
+			right: 5px;
+			bottom: 10px;
+			font-size: 20px;
+			line-height: 130%;
+		}
+
+		.bg {
+			background-image: url("assets/bg.png");
+			background-position-y: bottom
+		}
+	</style>
+</head>
+
+<body>
+	<div id="particles-js"></div>
+	<div id="overlay" class="container" style="text-align:center">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom:10px">
+			<a class="navbar-brand" href="../"><img src="../assets/favicon.ico" height=30px width=30px> yude.moe</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-link"></i>
+							<span data-i18n="index.link"></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="https://github.com/yudemoe"><i class="fab fa-github"></i>
+
+								GitHub <span class="text-monospace">yudemoe</span></a>
+							<a class="dropdown-item" href="https://discord.gg/X6srY7X"><i class="fab fa-discord"></i>
+								Discord <span class="text-monospace">X6srY7X</span>
+							</a>
+							<a class="dropdown-item" href="https://twitter.com/yudemoe"><i class="fab fa-twitter"></i>
+								Twitter <span class="text-monospace">@yudemoe</span>
+							</a>
+
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-server"></i>
+							<span data-i18n="index.hosting"></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="https://git.yude.moe"><i class="fab fa-git"></i>
+								Gogs - Git <span data-i18n="index.service"></span>
+								<a class="dropdown-item" href="https://s.yude.moe"><i class="fas fa-cut"></i>
+									Lstu - URL <span data-i18n="index.shorten"></span>
+								</a>
+								<a class="dropdown-item" href="https://paste.yude.moe"><i class="fab fa-clipboard"></i>
+									µPaste - <span data-i18n="index.text_sharing"></span>
+								</a>
+								<a class="dropdown-item" href="https://md.yude.moe"><i class="fab fa-markdown"></i>
+									CodiMD - Markdown <span data-i18n="index.sharing"></span>
+								</a>
+								<a class="dropdown-item" href="https://cloud.yude.moe"><i class="fas fa-cloud"></i>
+									Nextcloud - <span data-i18n="index.file_sharing"></span>
+								</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-check"></i>
+							<span data-i18n="index.server_info"></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../stats"><img width=30px height=30px
+									src="../assets/brand/mackerel.png"> Mackerel</a>
+							<a class="dropdown-item" href="https://nd.yude.moe">
+								<img width=20px height=20px src="../assets/brand/netdata.png"> NetData
+							</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="../donate"><i class="fas fa-heart"></i>
+							<span data-i18n="index.donate"></span></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item" aria-current="page"><a href="../" style="color:#778899"><i
+							class="fas fa-home"></i> yude.moe</a></li>
+				<li class="breadcrumb-item active" aria-current="page"><i class="fas fa-link"></i> <span
+						data-i18n="index.mutual_link"></span></li>
+			</ol>
+		</nav>
+		<div style="position:relative;pointer-events:auto">
+
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title" data-i18n="index.mutual_link"></h5>
+					<hr>
+					<a href="https://koronyan888.github.io/"><img data-toggle="tooltip" data-placement="top"
+							title="ころにゃんのホームページ" width=234px src="assets/banner/koronyan888.png" alt="ころにゃんのホームページ"></a>
+					<a href="https://nona.sikeserver.com/"><img data-toggle="tooltip" data-placement="top"
+							title="こーげんやさい" width=234px src="assets/banner/takakun_impact.png" alt="こーげんやさい"></a>
+					<a href="https://exout.net/~kirby3ds/" target="_blank"><img data-toggle="tooltip"
+							data-placement="top" title="カービィ★KIRBYの家" width=234px
+							src="https://exout.net/~kirby3ds/link/bnr/bnr_234x60.png" alt="カービィ★KIRBYの家"></a>
+					<a href="https://pc7342.net/"><img data-toggle="tooltip" data-placement="top" title="pc7342's Site"
+							src="https://pc7342.net/banner.png" width=200px height=40px alt="pc7342's Site"></a>
+					<hr>
+					<span data-i18n="banner.contact_1"></span><a href="https://twitter.com/yudete"><i
+							class="fab fa-twitter"></i> @yudete</a><span data-i18n="banner.contact_2"></span>
+				</div>
+			</div>
+			<div class="card" style="margin-top: 10px">
+				<div class="card-body">
+					<h5 class="card-title" data-i18n="banner.links_title"></h5>
+					<hr>
+					<img data-toggle="tooltip" title="banner.png (200x40)" src="../assets/banner.png" alt="yude.moe"
+						width=200px height=40px>
+					<p><span class="badge badge-success">HTML</span></p>
+					<p style="margin-top: -18px"><code id="source">&lt;a href="https://yude.moe"&gt;&lt;img
+							src="https://yude.moe/assets/banner.png" width=200px height=40px
+							alt="yude.moe"&gt;&lt;/a&gt;</code>
+						<p><button source_html data-toggle="tooltip" data-trigger="click" title="✔ コピーしました"
+								onclick="setTimeout('$(\'[source_html]\').tooltip(\'hide\')', 1000)" type="button"
+								class="btn btn-primary" data-clipboard-target="#source"><i class="fas fa-clipboard"></i>
+								<span data-i18n="index.copy"></span></button></p>
+						<p><span class="badge badge-success">BBCode</span></p>
+						<p style="margin-top: -18px"><code
+								id="source_bbcode">[img]https://yude.moe/assets/banner.png[/img]</code>
+							<p><button source_bbcode data-toggle="tooltip"
+									onclick="setTimeout('$(\'[source_bbcode]\').tooltip(\'hide\')', 1000)"
+									data-trigger="click" title="✔ コピーしました" type="button" class="btn btn-primary"
+									data-clipboard-target="#source_bbcode"><i class="fas fa-clipboard"></i> <span
+										data-i18n="index.copy"></span></button>
+							</p>
+						</p>
+
+				</div>
+			</div>
+		</div>
+		<div class="mx-auto" style="width: 90%;margin-top:5%;text-align:center">
+			<hr>
+			<p style="color: gray; font-family: 'Roboto Mono'"><span style="display: inline-block">Made by <a
+						style="color:black" href="https://twitter.com/yudete">yude</a>.</span> | <a href="about"><span
+						style="display: inline-block;color:black">
+						<span data-i18n="index.about"></span>
+					</span></a></p>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+		integrity="sha256-OUFW7hFO0/r5aEGTQOz9F/aXQOt+TwqI1Z4fbVvww04=" crossorigin="anonymous"></script>
+	</script>
+	<script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+	<script async>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+	<script async>
+		new ClipboardJS('.btn');
+	</script>
+	<!-- i18n -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/19.1.0/i18next.min.js"
+		integrity="sha256-42pTqClxbTQsNYA3/v6RFFKAzA2zwfjq47JQNHvoNR4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"
+		integrity="sha256-Vo1wrHjny4hQDPA9SwBUpG/EBawhvUusdqRHb3Ia7x8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-xhr-backend/3.2.2/i18nextXHRBackend.min.js"
+		integrity="sha256-dxNIQVw/2RvuqZbPG4/pe6P0YpTY5mg7/ppSKWLjN8Y=" crossorigin="anonymous"></script>
+	<script>
+		var urlParam = location.search.substring(1);
+		if (urlParam) {
+			var param = urlParam.split('&');
+			var paramArray = [];
+			for (i = 0; i < param.length; i++) {
+				var paramItem = param[i].split('=');
+				paramArray[paramItem[0]] = paramItem[1];
+			}
+			var lang = paramArray.lang
+		} else {
+			var lang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
+			lang = lang.split("-")[0];
+		}
+		i18next.use(i18nextXHRBackend).init({
+			lng: lang,
+			debug: false,
+			fallbackLng: false,
+			defaultLng: 'en',
+			backend: {
+				loadPath: '../locales/{{lng}}/translation.json'
+			}
+		}, function (err, t) {
+			jqueryI18next.init(i18next, $);
+			$("[data-i18n]").localize();
+		});
+		console.log("Detected language is " + lang + ".");
+	</script>
+</body>
+
+</html>

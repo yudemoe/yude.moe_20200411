@@ -1,0 +1,26 @@
+{
+  "name": "yudemoe",
+  "version": "1.0.0",
+  "description": "Front page of yude.moe",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy --passthroughall --input=src --output=public --config=eleventy.js",
+    "now-build": "npx @11ty/eleventy --passthroughall --input=src --output=public --config=eleventy.js",
+    "start": "npx @11ty/eleventy --passthroughall --input=src --output=public --config=eleventy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yudecchi/yudemoe.git"
+  },
+  "keywords": [],
+  "author": "yude",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yudecchi/yudemoe/issues"
+  },
+  "dependencies": {
+    "nodejs": "0.0.0",
+    "sergey": "0.0.1"
+  },
+  "homepage": "https://github.com/yudecchi/yudemoe#readme"
+}

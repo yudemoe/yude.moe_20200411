@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<title>❤ 寄付 | yude.moe</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+	<link rel="dns-prefetch" href="//code.jquery.com">
+	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto+Mono&display=swap" rel="stylesheet"
+		media="print" onload="this.media='all'" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css"
+		integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print"
+		onload="this.media='all'" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" media="print"
+		onload="this.media='all'" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+		integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" media="print"
+		onload="this.media='all'" />
+	<link rel="icon" href="assets/favicon.ico">
+	<meta property="og:title" content="❤ 寄付 | yude.moe" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://yude.moe/donate" />
+	<meta property="og:image" content="https://yude.moe/assets/mel-full.jpg" />
+	<meta property="og:description" content="❤ yude.moe への寄付ページ | You can support yude.moe via Kyash or PayPal.Me" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@yudemoe" />
+	<style>
+		@font-face {
+			font-family: 'Font Awesome 5 Brands';
+			font-style: normal;
+			font-weight: 400;
+			src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-brands-400.woff2") format("woff2");
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Font Awesome 5 Free';
+			font-style: normal;
+			font-weight: 900;
+			src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-solid-900.woff2") format("woff2");
+			font-display: swap;
+		}
+
+		body {
+			font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Roboto Mono', "Noto Sans JP";
+			background-color: #262a2f;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container" style="text-align:left">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom:10px">
+			<a class="navbar-brand" href="../"><img src="../assets/favicon.ico" height=30px width=30px> yude.moe</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-link"></i>
+							<span data-i18n="index.link"></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="https://github.com/yudemoe"><i class="fab fa-github"></i>
+
+								GitHub <span class="text-monospace">yudemoe</span></a>
+							<a class="dropdown-item" href="https://discord.gg/X6srY7X"><i class="fab fa-discord"></i>
+								Discord <span class="text-monospace">X6srY7X</span>
+							</a>
+							<a class="dropdown-item" href="https://twitter.com/yudemoe"><i class="fab fa-twitter"></i>
+								Twitter <span class="text-monospace">@yudemoe</span>
+							</a>
+
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-server"></i>
+							<span data-i18n="index.hosting"></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="https://git.yude.moe"><i class="fab fa-git"></i>
+								Gogs - Git <span data-i18n="index.service"></span>
+								<a class="dropdown-item" href="https://s.yude.moe"><i class="fas fa-cut"></i>
+									Lstu - URL <span data-i18n="index.shorten"></span>
+								</a>
+								<a class="dropdown-item" href="https://paste.yude.moe"><i class="fab fa-clipboard"></i>
+									µPaste - <span data-i18n="index.text_sharing"></span>
+								</a>
+								<a class="dropdown-item" href="https://md.yude.moe"><i class="fab fa-markdown"></i>
+									CodiMD - Markdown <span data-i18n="index.sharing"></span>
+								</a>
+								<a class="dropdown-item" href="https://cloud.yude.moe"><i class="fas fa-cloud"></i>
+									Nextcloud - <span data-i18n="index.file_sharing"></span>
+								</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-check"></i>
+							<span data-i18n="index.server_info"></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../stats"><img width=30px height=30px
+									src="../assets/brand/mackerel.png"> Mackerel</a>
+							<a class="dropdown-item" href="https://nd.yude.moe">
+								<img width=20px height=20px src="../assets/brand/netdata.png"> NetData
+							</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="../donate"><i class="fas fa-heart"></i>
+							<span data-i18n="index.donate"></span></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item" aria-current="page"><a href="../" style="color:#778899"><i
+							class="fas fa-home"></i> yude.moe</a></li>
+				<li class="breadcrumb-item active" aria-current="page"><i class="fas fa-heart"></i> 寄付</li>
+
+			</ol>
+		</nav>
+		<div class="card">
+			<div class="card-body" style="text-align:center">
+				<h5 class="card-title">寄付</h5>
+				<h6 class="card-subtitle mb-2 text-muted">Make a donation to yude.moe</h6>
+				<p class="card-text">以下の方法で、yude.moe に寄付することができます。</p>
+			</div>
+		</div>
+		<div class="card-columns" style="margin-top:10px">
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fab fa-paypal"></i>
+						PayPal</h5>
+					<a href="https://paypal.me/yudemoe" class="card-link"><i class="fab fa-paypal"></i>
+						PayPal.Me/yudemoe</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fab fa-amazon"></i>
+						Amazon ほしい物リスト</h5>
+
+					<a href="https://www.amazon.jp/hz/wishlist/ls/8WTKCPWKOJ2N?ref_=wl_share" class="card-link"><i
+							class="fab fa-amazon"></i>
+						yude's Amazon Wishlist</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fas fa-qrcode"></i> Kyash <small>Kyash ID:
+							<code>yude</code></small>
+						<button data-toggle="tooltip" data-trigger="click" data-placement="top" title="✔ コピーしました！"
+							class="btn dayo" data-clipboard-text="yude"><i class="fas fa-paste"></i></button>
+					</h5>
+					<img style="margin-top: -10px;max-height: 300px" alt="Kyash QR" src="assets/kyash.jpg">
+
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fab fa-bitcoin"></i> Bitcoin <small>BTC</small></h5>
+					<code>38vFuUmkGD1U1GTb4BjcZybYZLnZ1YRszA</code>
+					<button data-toggle="tooltip" data-trigger="click" data-placement="top" title="✔ コピーしました！"
+						class="btn dayo" data-clipboard-text="38vFuUmkGD1U1GTb4BjcZybYZLnZ1YRszA"><i
+							class="fas fa-paste"></i></button>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fas fa-money-bill-wave-alt"></i> Zcash <small>ZEC</small></h5>
+					<code>t1cqyUcdrzYVZv5eRBRt96xHzqmeLnyzEwq</code>
+					<button data-toggle="tooltip" data-trigger="click" data-placement="top" title="✔ コピーしました！"
+						class="btn dayo" data-clipboard-text="t1cqyUcdrzYVZv5eRBRt96xHzqmeLnyzEwq"><i
+							class="fas fa-paste"></i></button>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fas fa-rocket"></i> Stellar Lumens <small>XLM</small></h5>
+					<li>Payment address</li>
+					<code>yude*keybase.io</code>
+					<button data-toggle="tooltip" data-trigger="click" data-placement="top" title="✔ コピーしました！"
+						class="btn dayo" data-clipboard-text="yude*keybase.io"><i class="fas fa-paste"></i></button>
+					<li>Stellar account ID</li>
+					<code>GCWSJX4NL7TO3QOYR7CDJPZBJEEUGN6YIIGSK54ZEQYGA5TYJ57SSR2S</code>
+					<button data-toggle="tooltip" data-trigger="click" data-placement="top" title="✔ コピーしました！"
+						class="btn dayo"
+						data-clipboard-text="GCWSJX4NL7TO3QOYR7CDJPZBJEEUGN6YIIGSK54ZEQYGA5TYJ57SSR2S"><i
+							class="fas fa-paste"></i></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mx-auto" style="width:90%;margin-top:5%;text-align:center">
+		<hr>
+		<p style="color: gray; font-family: 'Roboto Mono'"><span style="display: inline-block">Made by <a
+					style="color:black" href="https://twitter.com/yudete">yude</a>.</span> | <a href="about"><span
+					style="display: inline-block;color:black">
+					<span data-i18n="index.about"></span>
+				</span></a></p>
+	</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+		integrity="sha256-OUFW7hFO0/r5aEGTQOz9F/aXQOt+TwqI1Z4fbVvww04=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"
+		integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+	<script async>
+		var clipboard = new ClipboardJS('.btn');
+	</script>
+	<script async>
+		$('[data-toggle="tooltip"]').tooltip();
+		$(document).on('show.bs.tooltip', function (e) {
+			setTimeout(function () {
+				$('[data-toggle="tooltip"]').tooltip('hide');
+			}, 400);
+		});
+	</script>
+	<!-- i18n -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/19.1.0/i18next.min.js"
+		integrity="sha256-42pTqClxbTQsNYA3/v6RFFKAzA2zwfjq47JQNHvoNR4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"
+		integrity="sha256-Vo1wrHjny4hQDPA9SwBUpG/EBawhvUusdqRHb3Ia7x8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-xhr-backend/3.2.2/i18nextXHRBackend.min.js"
+		integrity="sha256-dxNIQVw/2RvuqZbPG4/pe6P0YpTY5mg7/ppSKWLjN8Y=" crossorigin="anonymous"></script>
+	<script>
+		var urlParam = location.search.substring(1);
+		if (urlParam) {
+			var param = urlParam.split('&');
+			var paramArray = [];
+			for (i = 0; i < param.length; i++) {
+				var paramItem = param[i].split('=');
+				paramArray[paramItem[0]] = paramItem[1];
+			}
+			var lang = paramArray.lang
+		} else {
+			var lang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
+			lang = lang.split("-")[0];
+		}
+		i18next.use(i18nextXHRBackend).init({
+			lng: lang,
+			debug: false,
+			fallbackLng: false,
+			defaultLng: 'en',
+			backend: {
+				loadPath: '../locales/{{lng}}/translation.json'
+			}
+		}, function (err, t) {
+			jqueryI18next.init(i18next, $);
+			$("[data-i18n]").localize();
+		});
+		console.log("Detected language is " + lang + ".");
+	</script>
+</body>
+
+</html>
