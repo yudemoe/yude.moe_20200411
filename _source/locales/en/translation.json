@@ -13,7 +13,8 @@
         "text_sharing": "Text Sharing",
         "server_info": "Server Status",
         "about": "About yude.moe",
-        "copy": "Copy"
+        "copy": "Copy",
+        "language": "Language"
     },
     "banner": {
         "links_title": "Our banners",
