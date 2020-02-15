@@ -21,6 +21,33 @@
     integrity="sha256-Vo1wrHjny4hQDPA9SwBUpG/EBawhvUusdqRHb3Ia7x8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-xhr-backend/3.2.2/i18nextXHRBackend.min.js"
     integrity="sha256-dxNIQVw/2RvuqZbPG4/pe6P0YpTY5mg7/ppSKWLjN8Y=" crossorigin="anonymous"></script>
+    {% if title == "👤 プロフィール" %}
+    <script await>
+    var req = new XMLHttpRequest();
+    req.open('GET', 'https://yude.glitch.me', true);
+    req.onload = function () {
+      var status = this.response;
+      if (status == "online") {
+        var color = '#43b581'
+      }
+      if (status == "idle") {
+        var color = '#faa61a'
+      }
+      if (status == "dnd") {
+        var color = '#f04747'
+      }
+      if (status == "offline") {
+        var color = '#747f8d'
+      }
+      var str = document.getElementById("discord").innerHTML;
+      str = str.replace(
+        '<div style="color: white" class="spinner-border" role="status"><span class="sr-only">Loading...</span></div>',
+        '<span style="font-size: 1.4em"><i style="color: ' + color + '" class="fab fa-discord"></i></span>');
+      document.getElementById("discord").innerHTML = str;
+    }
+    req.send();
+  </script>
+    {% endif %}
 {% raw %}
 <script>
     var urlParam = location.search.substring(1);
