@@ -1,0 +1,10 @@
+{
+    "source": "_source",
+    "destination": "public",
+    "plugins": {
+        "metalsmith-templates": {
+            "engine": "swig",
+            "directory": "_layout"
+        }
+    }
+}

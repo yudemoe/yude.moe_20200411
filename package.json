@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "metalsmith": "~1.0.1",
+    "metalsmith-templates": "~0.6.0",
+    "swig": "~1.4.2"
+  },
+  "scripts": {
+    "build": "metalsmith"
+  }
+}

@@ -13,11 +13,12 @@
         "text_sharing": "Text Sharing",
         "server_info": "Server Status",
         "about": "About yude.moe",
-        "copy": "Copy"
+        "copy": "Copy",
+        "language": "Language"
     },
     "banner": {
         "links_title": "Our banners",
-        "contact_1": "If you feel like being shown on this page, please contact me via Twitter ",
+        "contact_1": "To be shown on this page, please contact me via ",
         "contact_2": "."
     },
     "profile": {
