@@ -3,17 +3,19 @@
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"
     integrity="sha256-OUFW7hFO0/r5aEGTQOz9F/aXQOt+TwqI1Z4fbVvww04=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
-    integrity="sha256-+u54FaX9J+k40eAcg5K2YzICSQjrEYBI9gju5nE3HfY=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"
     integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+
+{% if title == "🍳 ホーム" %}
+<!-- particles.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
+    integrity="sha256-+u54FaX9J+k40eAcg5K2YzICSQjrEYBI9gju5nE3HfY=" crossorigin="anonymous"></script>
 <script>
-    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
     particlesJS.load('particles-js', '../assets/particlesjs-config.json', function () {
         console.log('callback - particles.js config loaded');
     });
 </script>
-
+{% endif %}
 <!-- i18n -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/19.1.0/i18next.min.js"
     integrity="sha256-42pTqClxbTQsNYA3/v6RFFKAzA2zwfjq47JQNHvoNR4=" crossorigin="anonymous"></script>
@@ -22,6 +24,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-xhr-backend/3.2.2/i18nextXHRBackend.min.js"
     integrity="sha256-dxNIQVw/2RvuqZbPG4/pe6P0YpTY5mg7/ppSKWLjN8Y=" crossorigin="anonymous"></script>
     {% if title == "👤 プロフィール" %}
+    <!-- discord status -->
     <script await>
     var req = new XMLHttpRequest();
     req.open('GET', 'https://yude.glitch.me', true);
@@ -41,9 +44,13 @@
       }
       var str = document.getElementById("discord").innerHTML;
       str = str.replace(
-        '<div style="color: white" class="spinner-border" role="status"><span class="sr-only">Loading...</span></div>',
+        '<span style="color: white" class="spinner-border" role="status">',
         '<span style="font-size: 1.4em"><i style="color: ' + color + '" class="fab fa-discord"></i></span>');
+        str = str.replace(
+        '<span class="sr-only">Loading...</span></span>',
+        '');
       document.getElementById("discord").innerHTML = str;
+      console.log("Got Discord status: "+status+" and color is "+color+" .")
     }
     req.send();
   </script>
