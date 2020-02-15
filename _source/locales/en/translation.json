@@ -13,17 +13,23 @@
         "text_sharing": "Text Sharing",
         "server_info": "Server Status",
         "about": "About yude.moe",
-        "copy": "Copy",
-        "language": "Language"
+        "copy": "Copy"
     },
     "banner": {
         "links_title": "Our banners",
-        "contact_1": "To be shown on this page, please contact me via ",
+        "contact_1": "If you feel like being shown on this page, please contact me via Twitter ",
         "contact_2": "."
     },
     "profile": {
         "title": "yude's profile",
-        "game": "Games"
+        "game": "Games",
+        "othellonia": "Gyakuten Othellonia",
+        "donder": "Donder Hiroba",
+        "monster_strike": "Monster Strike",
+        "namco": "namco",
+        "bushimo": "BUSHIMO",
+        "bang-dream_1": "Bang Dream!",
+        "bang-dream_2": "Girls Band Party!"
     },
     "about": {
         "about_this": "About this website",
@@ -34,6 +40,19 @@
         "tech": "Technologies",
         "contact": "Contact",
         "top_page_1": " front page is under the ",
-        "top_page_2": "."
+        "top_page_2": ".",
+        "background_toppage": "Background image of the front page",
+        "icon_profile": "Avatar in profile page",
+        "favicon": "Favicon"
+    },
+    "donate": {
+        "description": "You can donate to yude.moe by the following means.",
+        "payment_address": "Payment Address",
+        "stellar_id": "Stellar Account ID",
+        "wishlist": "Wishlist"
+    },
+    "stats": {
+        "powered_by_1": "Powered by ",
+        "powered_by_2": "."
     }
 }

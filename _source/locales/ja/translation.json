@@ -13,8 +13,7 @@
         "text_sharing": "テキスト共有",
         "server_info": "サーバー情報",
         "about": "yude.moe について",
-        "copy": "コピー",
-        "language": "言語"
+        "copy": "コピー"
     },
     "banner": {
         "links_title": "サイトバナー",
@@ -23,7 +22,14 @@
     },
     "profile": {
         "title": "yude のプロフィール",
-        "game": "ゲーム"
+        "game": "ゲーム",
+        "othellonia": "逆転オセロニア",
+        "donder": "ドンだーひろば",
+        "monster_strike": "モンスターストライク",
+        "namco": "ナムコ",
+        "bushimo": "ブシモ",
+        "bang-dream_1": "バンドリ！",
+        "bang-dream_2": "ガールズバンドパーティ！"
     },
     "about": {
         "about_this": "このサイトについて",
@@ -34,6 +40,20 @@
         "tech": "技術",
         "contact": "連絡先",
         "top_page_1": " のトップページは ",
-        "top_page_2": " 下で利用できます。"
+        "top_page_2": " 下で利用できます。",
+        "background_toppage": "トップページ 背景",
+        "icon_profile": "プロフィールページ アイコン",
+        "favicon": "ファビコン",
+        "san": " さん"
+    },
+    "donate": {
+        "description": "下記の方法で、yude.moe に寄付をすることができます。",
+        "payment_address": "支払先アドレス",
+        "stellar_id": "Stellar アカウントID",
+        "wishlist": "ほしい物リスト"
+    },
+    "stats": {
+        "powered_by_1": "",
+        "powered_by_2": " によって提供されています。"
     }
 }
