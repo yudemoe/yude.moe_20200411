@@ -35,7 +35,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="https://git.yude.moe"><i class="fab fa-git"></i>
-                            Gogs - Git <span data-i18n="index.service"></span>
+                            Gogs - Git <span data-i18n="index.service"></span></a>
                             <a class="dropdown-item" href="https://s.yude.moe"><i class="fas fa-cut"></i>
                                 Lstu - URL <span data-i18n="index.shorten"></span>
                             </a>

@@ -54,7 +54,16 @@
     }
     req.send();
   </script>
-    {% endif %}
+   {% endif %}
+    {% if title == "✅ サーバー情報" %}
+  <!-- layzr.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/layzr.js/2.2.2/layzr.min.js" integrity="sha256-SQIv8XqbNjc3Nw2XAoEFs43fUfNtyLfD1tLzaP4J/98=" crossorigin="anonymous"></script>
+  <script>
+window.addEventListener('load', function () {
+  var layzr = new Layzr();
+}, false);
+</script>
+   {% endif %}
 {% raw %}
 <script>
     var urlParam = location.search.substring(1);

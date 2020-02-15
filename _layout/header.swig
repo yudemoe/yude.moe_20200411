@@ -53,22 +53,38 @@
             font-display: swap;
         }
 
+        {% if title == "✅ サーバー情報" %}
+        .mackerel-frames iframe {
+  border: 1px #ccc solid;
+  box-sizing: border-box;
+  margin: 0;
+}
+@media screen and (max-width: 654px) {
+  .mackerel-frames {
+    position: relative;
+    width: 100%;
+    padding: calc(424 / 654 * 100%) 0 0;
+  }
+  .mackerel-frames iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+        {% endif %}
+        {% if title == "👤 プロフィール" %}
         @font-face {
             font-family: 'Morning Star';
             src: local('Morning Star'),
                 url('../assets/fonts/MorningStar.ttf');
         }
-
+        {% endif %}
         body {
             font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Roboto Mono', "Noto Sans JP";
             background-color: #262a2f;
         }
-
-        canvas {
-            display: block;
-        }
-
-
         .text {
             position: absolute;
             right: 5px;
@@ -76,12 +92,12 @@
             font-size: 20px;
             line-height: 130%;
         }
-
+        {% if title == "🍳 ホーム" %}
         .bg {
             background-image: url("../assets/marisa_2x.webp");
             background-repeat: no-repeat;
         }
-
+        {% endif %}
         .fa-svg svg {
             height: 18px;
             max-width: 20px;
