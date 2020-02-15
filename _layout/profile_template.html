@@ -285,6 +285,32 @@
         console.log("Detected language is " + lang + ".");
     </script>
     {% endraw %}
+    <script await>
+        var req = new XMLHttpRequest();
+        req.open('GET', 'https://yude.glitch.me', true);
+        req.onload = function () {
+            var status = this.response;
+            if (status == "online") {
+                var color = '#43b581'
+            }
+            if (status == "idle") {
+                var color = '#faa61a'
+            }
+            if (status == "dnd") {
+                var color = '#f04747'
+            }
+            if (status == "offline") {
+                var color = '#747f8d'
+            }
+            var str = document.getElementById("discord").innerHTML;
+            str = str.replace(
+                '<div style="color: white" class="spinner-border" role="status"><span class="sr-only">Loading...</span></div>',
+                '<span style="font-size: 1.4em"><i style="color: ' + color +
+                '" class="fab fa-discord"></i></span>');
+            document.getElementById("discord").innerHTML = str;
+        }
+        req.send();
+    </script>
     <script async>
         $(document).on('show.bs.tooltip', function (e) {
             setTimeout(function () {
