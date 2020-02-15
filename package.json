@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "nodejs": "0.0.0",
-    "sergey": "0.0.1"
+    "@11ty/eleventy": "0.10.0"
   },
   "homepage": "https://github.com/yudecchi/yudemoe#readme"
 }
