@@ -262,7 +262,7 @@
             fallbackLng: false,
             defaultLng: 'en',
             backend: {
-                loadPath: '../locales/{% raw %}{{lang}}/translation.json'
+                loadPath: '../locales/{{lang}}/translation.json'
             }
         }, function (err, t) {
             jqueryI18next.init(i18next, $);
