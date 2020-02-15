@@ -241,6 +241,7 @@
         integrity="sha256-Vo1wrHjny4hQDPA9SwBUpG/EBawhvUusdqRHb3Ia7x8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-xhr-backend/3.2.2/i18nextXHRBackend.min.js"
         integrity="sha256-dxNIQVw/2RvuqZbPG4/pe6P0YpTY5mg7/ppSKWLjN8Y=" crossorigin="anonymous"></script>
+    {% raw %}
     <script>
         var urlParam = location.search.substring(1);
         if (urlParam) {
@@ -261,7 +262,7 @@
             fallbackLng: false,
             defaultLng: 'en',
             backend: {
-                loadPath: '../locales/{{lng}}/translation.json'
+                loadPath: '../locales/{% raw %}{{lang}}/translation.json'
             }
         }, function (err, t) {
             jqueryI18next.init(i18next, $);
@@ -269,6 +270,7 @@
         });
         console.log("Detected language is " + lang + ".");
     </script>
+    {% endraw %}
     <script async>
         $(document).on('show.bs.tooltip', function (e) {
             setTimeout(function () {
