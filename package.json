@@ -1,26 +1,10 @@
 {
-  "name": "yudemoe",
-  "version": "1.0.0",
-  "description": "Front page of yude.moe",
-  "main": "index.js",
+  "devDependencies": {
+    "metalsmith": "~1.0.1",
+    "metalsmith-templates": "~0.6.0",
+    "swig": "~1.4.2"
+  },
   "scripts": {
-    "build": "npx @11ty/eleventy --passthroughall --input=src --output=public --config=eleventy.js",
-    "now-build": "npx @11ty/eleventy --passthroughall --input=src --output=_site --config=eleventy.js",
-    "start": "npx @11ty/eleventy --passthroughall --input=src --output=public --config=eleventy.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yudecchi/yudemoe.git"
-  },
-  "keywords": [],
-  "author": "yude",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yudecchi/yudemoe/issues"
-  },
-  "dependencies": {
-    "nodejs": "0.0.0",
-    "@11ty/eleventy": "0.10.0"
-  },
-  "homepage": "https://yude.moe"
+    "build": "metalsmith"
+  }
 }

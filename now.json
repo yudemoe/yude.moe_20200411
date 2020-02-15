@@ -1,4 +1,6 @@
 {
     "version": 2,
-    "name": "yudemoe"
+    "name": "yudemoe",
+    "cleanUrls": true,
+    "trailingSlash": true
 }

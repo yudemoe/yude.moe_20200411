@@ -1,3 +1,6 @@
+---
+template: default.html
+---
 <!doctype html>
 <html lang="ja">
 
@@ -237,7 +240,7 @@
 			var lang = paramArray.lang
 		} else {
 			var lang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
-			lang = lang.split("-")[0];
+			var lang = lang.split("-")[0];
 		}
 		i18next.use(i18nextXHRBackend).init({
 			lng: lang,
