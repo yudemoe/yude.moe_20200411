@@ -2,5 +2,5 @@
     "version": 2,
     "name": "yudemoe",
     "cleanUrls": true,
-    "trailingSlash": true
+    "trailingSlash": false
 }
