@@ -1,6 +1,6 @@
 <div class="container" style="text-align:center" id="content">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom:10px">
-        <a class="navbar-brand" href="../"><img src="../assets/favicon.ico" height=30px width=30px> yude.moe</a>
+        <a class="navbar-brand domain" href="../"><img src="../assets/favicon.ico" height=30px width=30px> yude.moe</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -57,7 +57,7 @@
                         <span data-i18n="index.server_info"></span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../stats"><img width=30px height=30px
+                        <a class="dropdown-item domain" href="../stats"><img width=30px height=30px
                                 src="../assets/brand/mackerel.png"> Mackerel</a>
                         <a class="dropdown-item" href="https://nd.yude.moe">
                             <img width=20px height=20px src="../assets/brand/netdata.png"> NetData
@@ -67,7 +67,7 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="../donate"><i class="fas fa-heart"></i>
+                    <a class="nav-link domain" href="../donate"><i class="fas fa-heart"></i>
                         <span data-i18n="index.donate"></span></a>
                 </li>
                 <li class="nav-item dropdown">

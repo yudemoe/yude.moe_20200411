@@ -2,12 +2,7 @@
 <div class="mx-auto" style="width:90%;margin-top:5%;text-align:center">
     <hr>
     <p style="color: gray; font-family: 'Roboto Mono'"><span style="display: inline-block">Made by <a
-                style="color:black" href="https://twitter.com/yudete">yude</a>.</span>{% if title != "ℹ このサイトについて" %} | <a href="../about"><span
-                style="display: inline-block;color:black">
-                <span data-i18n="index.about"></span>
-            </span></a>{% endif %}</p>
+                style="color:black" href="https://twitter.com/yudete">yude</a>.</span>{% if title != "ℹ このサイトについて" %} | <a class="domain" href="../about" style="display: inline-block;color:black">
+                <span data-i18n="index.about"></span></a>{% endif %}</p>
 </div>
 </div>
-</body>
-
-</html>

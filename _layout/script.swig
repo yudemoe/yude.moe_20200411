@@ -57,14 +57,14 @@
    {% endif %}
     {% if title == "✅ サーバー情報" %}
   <!-- layzr.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/layzr.js/2.2.2/layzr.min.js" integrity="sha256-SQIv8XqbNjc3Nw2XAoEFs43fUfNtyLfD1tLzaP4J/98=" crossorigin="anonymous"></script>
-  <script>
-window.addEventListener('load', function () {
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/layzr.js/2.2.2/layzr.min.js" integrity="sha256-SQIv8XqbNjc3Nw2XAoEFs43fUfNtyLfD1tLzaP4J/98=" crossorigin="anonymous"></script>
+  <script defer>
+window.onload = window.addEventListener('load', function () {
   var layzr = new Layzr();
 }, false);
 </script>
    {% endif %}
-{% raw %}
+
 <script>
     var urlParam = location.search.substring(1);
     if (urlParam) {
@@ -75,26 +75,36 @@ window.addEventListener('load', function () {
             paramArray[paramItem[0]] = paramItem[1];
         }
         var lang = paramArray.lang
+        var preferred_lang = lang
     } else {
         var lang = navigator.languages ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
         var lang = lang.split("-")[0];
     }
-    i18next.use(i18nextXHRBackend).init({
+    window.onload = i18next.use(i18nextXHRBackend).init({
         lng: lang,
         debug: false,
         fallbackLng: false,
         defaultLng: 'en',
         backend: {
+            {% raw %}
             loadPath: '../locales/{{lng}}/translation.json'
+            {% endraw %}
         }
     }, function (err, t) {
         jqueryI18next.init(i18next, $);
         $("[data-i18n]").localize();
     });
-    console.log("Detected language is " + lang + ".");
+    if (preferred_lang != null){
+        console.log("Detected language is " + lang + " and preferred language is "+preferred_lang+".");
+    }else{
+    console.log("Detected language is " + lang + ".");}
+    if (preferred_lang != null){
+$('.domain').each( window.onload = function() {
+      $(this).attr('href', $(this).attr('href') + "?lang="+lang);
+    });}
 </script>
-{% endraw %}
-<script async>
+
+<script>
     $(document).on('show.bs.tooltip', function (e) {
         setTimeout(function () {
             $('[data-toggle="tooltip"]').tooltip('hide');
