@@ -36,7 +36,7 @@
                 color: white;width:100%;text-align:center;background-color: black
             }
             a{color: white}
-            #wrap{
+            .wrap{
                 width: 90%;
                 margin:0 auto;
                 text-align:left
@@ -45,6 +45,7 @@
     </style>
   </head>
   <body>
+  <div class="wrap">
   <div class="pure-menu pure-menu-horizontal">
     <a href="#" class="pure-menu-heading pure-menu-link">yude.moe</a>
     <ul class="pure-menu-list">
@@ -68,6 +69,8 @@
     </ul>
 </div>
     <%= yield %>
+    <p>Made by yude. ・ <a style="text-decoration:none" href="../about"><%= t(:about) %></a></p>
+    </div>
     <script>
     (function (window, document) {
     'use strict';
