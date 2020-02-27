@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= page_title current_page %> ・ yude.moe</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto+Mono&display=swap" rel="stylesheet"
+    media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css"
+        integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print"
+        onload="this.media='all'" />
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <style>
+    @font-face {
+            font-family: 'Font Awesome 5 Brands';
+            font-style: normal;
+            font-weight: 400;
+            src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-brands-400.woff2") format("woff2");
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Font Awesome 5 Free';
+            font-style: normal;
+            font-weight: 900;
+            src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-solid-900.woff2") format("woff2");
+            font-display: swap;
+        }
+        html, button, input, select, textarea,
+        .pure-g [class *= "pure-u"] {
+            font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Roboto Mono', "Noto Sans JP";
+        }
+            body {
+                color: white;width:100%;text-align:center;background-color: black
+            }
+            a{color: white}
+            #wrap{
+                width: 90%;
+                margin:0 auto;
+                text-align:left
+            }
+            .pure-menu-heading{text-transform:none}
+    </style>
+  </head>
+  <body>
+  <div class="pure-menu pure-menu-horizontal">
+    <a href="#" class="pure-menu-heading pure-menu-link">yude.moe</a>
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="../" class="pure-menu-link"><i class="fas fa-home"></i> <%= t(:home) %></a></li>
+        <li class="pure-menu-item pure-menu-has-children">
+                    <a href="#" id="menuLink1" class="pure-menu-link"><i class="fas fa-server"></i> <%= t(:hosting) %></a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="https://git.yude.moe" class="pure-menu-link"><i class="fab fa-git"></i>
+                        Gogs - Git</a></li>
+                        <li class="pure-menu-item"><a href="https://s.yude.moe" class="pure-menu-link"><i class="fas fa-cut"></i>
+                        Lstu - URL <%= t(:shorten) %></a></li>
+                        <li class="pure-menu-item"><a href="https://paste.yude.moe" class="pure-menu-link"><i class="fab fa-clipboard"></i>
+                        µPaste - <%= t(:text_sharing) %></a></li>
+                        <li class="pure-menu-item"><a href="https://md.yude.moe" class="pure-menu-link"><i class="fab fa-markdown"></i>
+                        CodiMD - Markdown <%= t(:sharing) %></a></li>
+                        <li class="pure-menu-item"><a href="https://cloud.yude.moe" class="pure-menu-link"><i class="fas fa-cloud"></i>
+                        Nextcloud - <%= t(:file_sharing) %></a></li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item"><a href="../donate" class="pure-menu-link"><i class="fas fa-heart"></i> <%= t(:donate) %></a></li>
+    </ul>
+</div>
+    <%= yield %>
+    <script>
+    (function (window, document) {
+    'use strict';
+    // Enable drop-down menus in Pure
+    // Inspired by YUI3 gallery-simple-menu by Julien LeComte
+    // [https://github.com/yui/yui3-gallery/blob/master/src/gallery-simple-menu/js/simple-menu.js]
+    function PureDropdown(dropdownParent) {
+
+        var PREFIX = 'pure-',
+            ACTIVE_CLASS_NAME = PREFIX + 'menu-active',
+            ARIA_ROLE = 'role',
+            ARIA_HIDDEN = 'aria-hidden',
+            MENU_OPEN = 0,
+            MENU_CLOSED = 1,
+            MENU_PARENT_CLASS_NAME = 'pure-menu-has-children',
+            MENU_ACTIVE_SELECTOR = '.pure-menu-active',
+            MENU_LINK_SELECTOR = '.pure-menu-link',
+            MENU_SELECTOR = '.pure-menu-children',
+            DISMISS_EVENT = (window.hasOwnProperty &&
+                window.hasOwnProperty('ontouchstart')) ?
+                    'touchstart' : 'mousedown',
+
+            ARROW_KEYS_ENABLED = true,
+
+            ddm = this;
+
+            this._state = MENU_CLOSED;
+
+            this.show = function () {
+                if (this._state !== MENU_OPEN) {
+                    this._dropdownParent.classList.add(ACTIVE_CLASS_NAME);
+                    this._menu.setAttribute(ARIA_HIDDEN, false);
+                    this._state = MENU_OPEN;
+                }
+            };
+
+            this.hide = function () {
+                if (this._state !== MENU_CLOSED) {
+                    this._dropdownParent.classList.remove(ACTIVE_CLASS_NAME);
+                    this._menu.setAttribute(ARIA_HIDDEN, true);
+                    this._link.focus();
+                    this._state = MENU_CLOSED;
+                }
+            };
+
+            this.toggle = function () {
+                this[this._state === MENU_CLOSED ? 'show' : 'hide']();
+            };
+
+            this.halt = function (e) {
+                e.stopPropagation();
+                e.preventDefault();
+            };
+
+            this._dropdownParent = dropdownParent;
+            this._link = this._dropdownParent.querySelector(MENU_LINK_SELECTOR);
+            this._menu = this._dropdownParent.querySelector(MENU_SELECTOR);
+            this._firstMenuLink = this._menu.querySelector(MENU_LINK_SELECTOR);
+            this._link.setAttribute('aria-haspopup', 'true');
+            this._menu.setAttribute(ARIA_ROLE, 'menu');
+            this._menu.setAttribute('aria-labelledby', this._link.getAttribute('id'));
+            this._menu.setAttribute('aria-hidden', 'true');
+            [].forEach.call(
+                this._menu.querySelectorAll('li'),
+                function(el){
+                    el.setAttribute(ARIA_ROLE, 'presentation');
+                }
+            );
+            [].forEach.call(
+                this._menu.querySelectorAll('a'),
+                function(el){
+                    el.setAttribute(ARIA_ROLE, 'menuitem');
+                }
+            );
+            this._link.addEventListener('click', function (e) {
+                e.stopPropagation();
+                e.preventDefault();
+                ddm.toggle();
+            });
+            document.addEventListener('keydown', function (e) {
+                var currentLink,
+                    previousSibling,
+                    nextSibling,
+                    previousLink,
+                    nextLink;
+                if (ddm._state !== MENU_OPEN) {
+                    return;
+                }
+                if (ddm._menu.querySelector(MENU_ACTIVE_SELECTOR)) {
+                    return;
+                }
+                currentLink = ddm._menu.querySelector(':focus');
+                if (e.keyCode === 27) {
+                    ddm.halt(e);
+                    ddm.hide();
+                }
+                else if (ARROW_KEYS_ENABLED && e.keyCode === 40) {
+                    ddm.halt(e);
+                    nextSibling = (currentLink) ? currentLink.parentNode.nextSibling : null;
+                    while (nextSibling && nextSibling.nodeType !== 1) {
+                        nextSibling = nextSibling.nextSibling;
+                    }
+                    nextLink = (nextSibling) ? nextSibling.querySelector('.pure-menu-link') : null;
+                    if (!currentLink) {
+                        ddm._menu.querySelector('.pure-menu-link').focus();
+                    }
+                    else if (nextLink) {
+                        nextLink.focus();
+                    }
+                }
+                else if (ARROW_KEYS_ENABLED && e.keyCode === 38) {
+                    ddm.halt(e);
+                    previousSibling = (currentLink) ? currentLink.parentNode.previousSibling : null;
+                    while (previousSibling && previousSibling.nodeType !== 1) {
+                        previousSibling = previousSibling.previousSibling;
+                    }
+                    previousLink = (previousSibling) ? previousSibling.querySelector('.pure-menu-link') : null;
+                    if (!currentLink) {
+                        ddm._menu.querySelector('.pure-menu-item:last-child .pure-menu-link').focus();
+                    }
+                    else if (previousLink) {
+                        previousLink.focus();
+                    }
+                }
+            });
+            document.addEventListener(DISMISS_EVENT, function (e) {
+                var target = e.target;
+                if (target !== ddm._link && !ddm._menu.contains(target)) {
+                    ddm.hide();
+                    ddm._link.blur();
+                }
+            });
+    }
+    function initDropdowns() {
+        var dropdownParents = document.querySelectorAll('.pure-menu-has-children');
+        for (var i = 0; i < dropdownParents.length; i++) {
+            var ddm = new PureDropdown(dropdownParents[i]);
+        }
+    }
+    initDropdowns();
+}(this, this.document));
+</script>
+  </body>
+</html>
