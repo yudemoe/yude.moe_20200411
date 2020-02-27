@@ -1,4 +1,4 @@
-name: Middleman
+name: Middleman Deploy
 
 on:
   push:
