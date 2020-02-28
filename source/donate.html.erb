@@ -4,7 +4,7 @@ title:
  ja: 💕 寄付
 ---
 
-<p class="is-size-2">💕 <%= t(:donate) %></p>
+<p class="is-size-2"><i class="fas fa-heart"></i>&ensp;<%= t(:donate) %></p>
 
 
 <div class="tile is-ancestor">
@@ -12,20 +12,28 @@ title:
     <div class="tile">
       <div class="tile is-parent is-vertical">
         <article class="tile is-child notification has-background-grey-dark">
-          <p class="title">Vertical...</p>
-          <p class="subtitle">Top tile</p>
+          <p class="title"><i class="fab fa-paypal"></i>
+          PayPal</p>
+          <p class="subtitle"><a href="https://paypal.me/yudemoe"><i class="fab fa-paypal"></i>
+          PayPal.Me/yudemoe</a></p>
         </article>
         <article class="tile is-child notification has-background-grey-dark">
-          <p class="title">Vertical...</p>
-          <p class="subtitle">Top tile</p>
+          <p class="title"><i class="fab fa-amazon"></i>
+          Amazon <%= t(:wishlist) %></p>
+          <p class="subtitle"><a href="https://www.amazon.jp/hz/wishlist/ls/8WTKCPWKOJ2N?ref_=wl_share"><i
+					class="fab fa-amazon"></i>
+				yude's Amazon Wishlist</a></p>
         </article>
         <article class="tile is-child notification has-background-grey-dark">
-          <p class="title">Vertical...</p>
-          <p class="subtitle">Top tile</p>
+          <p class="title"><i class="fas fa-rocket"></i> Stellar Lumens <small class="has-background-grey">XLM</small></p>
+          <p class="subtitle"><%= t(:payment_address) %>&ensp;<code>GCWSJX4NL7TO3QOYR7CDJPZBJEEUGN6YIIGSK54ZEQYGA5TYJ57SSR2S</code></p>
+          <p style="margin-top: -10px" class="subtitle"><%= t(:account) %>&ensp;ID&ensp;<code>yude*keybase.io</code></p>
         </article>
+        
         <article class="tile is-child notification has-background-grey-dark">
-          <p class="title">Vertical...</p>
-          <p class="subtitle">Top tile</p>
+          <p class="title"><i class="fab fa-bitcoin"></i> Bitcoin <small class="has-background-grey">BTC</small>
+          </p>
+          <p class="subtitle"><code>38vFuUmkGD1U1GTb4BjcZybYZLnZ1YRszA</code></p>
         </article>
       </div>
       </div>
@@ -34,20 +42,13 @@ title:
     <div class="tile">
       <div class="tile is-parent is-vertical">
         <article class="tile is-child notification has-background-grey-dark">
-          <p class="title">Vertical...</p>
-          <p class="subtitle">Top tile</p>
+          <p class="title"><i class="fas fa-money-bill-wave-alt"></i> Zcash <small class="has-background-grey">ZEC</small></p>
+          <p class="subtitle"><code>t1cqyUcdrzYVZv5eRBRt96xHzqmeLnyzEwq</code></p>
         </article>
         <article class="tile is-child notification has-background-grey-dark">
-          <p class="title">Vertical...</p>
-          <p class="subtitle">Top tile</p>
-        </article>
-        <article class="tile is-child notification has-background-grey-dark">
-          <p class="title">Vertical...</p>
-          <p class="subtitle">Top tile</p>
-        </article>
-        <article class="tile is-child notification has-background-grey-dark">
-          <p class="title">Vertical...</p>
-          <p class="subtitle">Top tile</p>
+          <p class="title"><i class="fas fa-qrcode"></i> Kyash <small>Kyash ID:
+					<code>yude</code></small></p>
+          <img style="margin-top: -10px;max-height: 300px" alt="Kyash QR" src="../images/kyash.jpg">
         </article>
       </div>
       </div>
