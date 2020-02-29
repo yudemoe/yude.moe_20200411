@@ -1,6 +1,4 @@
-<% if  I18n.locale == !'ja' %>
-<% locale = I18n.locale + '/' %>
-<% end %>
+<% if  I18n.locale != 'ja' %><% locale = "#{I18n.locale}/" %><% end %>
 <!doctype html>
 <html lang="ja">
   <head>
@@ -45,12 +43,20 @@
                 text-align:left
             }
             .card-link{color: black}
+            @keyframes r1 {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.has-image-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
     </style>
   </head>
   <body>
   <div class="wrap">
 
-  <nav class="navbar has-background-black" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-black" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
@@ -61,14 +67,14 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a href="../<%= locale %>" class="navbar-item has-text-white-bis">
+      <a href="../<%= locale %>" class="navbar-item">
       <i class="fas fa-home"></i>&ensp;<%= t(:home) %>
       </a>
 
       
 
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link has-text-white-bis">
+        <a class="navbar-link">
         <i class="fas fa-server"></i>&ensp;<%= t(:hosting) %>
         </a>
         <div class="navbar-dropdown">
@@ -92,11 +98,11 @@
     </div>
 
     <div class="navbar-end">
-    <a href="../<%= locale %>donate" class="navbar-item has-text-white-bis">
+    <a href="../<%= locale %>donate" class="navbar-item" style="color:white">
     <i class="fas fa-heart"></i>&ensp;<%= t(:donate) %>
   </a>
   <div class="navbar-item has-dropdown is-hoverable">
-  <a class="navbar-link has-text-white-bis">
+  <a class="navbar-link">
   <i class="fas fa-language"></i>&ensp;Language
   </a>
   <div class="navbar-dropdown">
@@ -111,7 +117,7 @@
   </div>
 </nav>
     <%= yield %>
-    <p style="text-align: center">Made by yude. ・ <a style="text-decoration:none" href="../about"><%= t(:about) %></a></p>
+    <p style="text-align: center">Made by yude. ・ <a style="text-decoration:none" href="../<%= locale %>about"><%= t(:about) %></a></p>
     </div>
     <script>
     if (location.pathname.includes("en")){
@@ -120,5 +126,31 @@
     document.getElementById('lang_en').href = "../en"+location.pathname
   }
     </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+});
+</script>
     </body>
 </html>
