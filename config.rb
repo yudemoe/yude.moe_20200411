@@ -4,8 +4,12 @@
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
-activate :directory_indexes
-activate :i18n, :mount_at_root => :ja, :path => "/:locale/"
+ activate :minify_css
+ activate :minify_javascript
+ activate :directory_indexes
+ activate :i18n,
+ :mount_at_root => :ja
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 

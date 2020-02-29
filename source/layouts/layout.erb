@@ -1,3 +1,6 @@
+<% if  I18n.locale == !'ja' %>
+<% locale = I18n.locale + '/' %>
+<% end %>
 <!doctype html>
 <html lang="ja">
   <head>
@@ -12,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css"
         integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print"
         onload="this.media='all'" />
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css" integrity="sha256-D9M5yrVDqFlla7nlELDaYZIpXfFWDytQtiV+TaH6F1I=" crossorigin="anonymous" />
         <style>
     @font-face {
@@ -57,7 +61,7 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a href="../" class="navbar-item has-text-white-bis">
+      <a href="../<%= locale %>" class="navbar-item has-text-white-bis">
       <i class="fas fa-home"></i>&ensp;<%= t(:home) %>
       </a>
 
@@ -88,16 +92,33 @@
     </div>
 
     <div class="navbar-end">
-    <a href="../donate" class="navbar-item has-text-white-bis">
+    <a href="../<%= locale %>donate" class="navbar-item has-text-white-bis">
     <i class="fas fa-heart"></i>&ensp;<%= t(:donate) %>
   </a>
-
+  <div class="navbar-item has-dropdown is-hoverable">
+  <a class="navbar-link has-text-white-bis">
+  <i class="fas fa-language"></i>&ensp;Language
+  </a>
+  <div class="navbar-dropdown">
+    <a id="lang_ja" href="#" class="navbar-item">
+    日本語
+    </a>
+    <a id="lang_en" href="#" class="navbar-item">
+    English
+    </a>
+  </div>
     </div>
   </div>
 </nav>
     <%= yield %>
     <p style="text-align: center">Made by yude. ・ <a style="text-decoration:none" href="../about"><%= t(:about) %></a></p>
     </div>
-    
+    <script>
+    if (location.pathname.includes("en")){
+    document.getElementById('lang_ja').href = ".."+location.pathname.replace("en/","")
+  }else{
+    document.getElementById('lang_en').href = "../en"+location.pathname
+  }
+    </script>
     </body>
 </html>

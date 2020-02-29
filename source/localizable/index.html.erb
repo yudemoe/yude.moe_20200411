@@ -3,10 +3,10 @@ title:
  en: 🏠 Home
  ja: 🏠 ホーム
 ---
-<% if I18n.locale != 'ja' %><%link_locale = I18n.locale + '/'%><% end %>
+
 <div class="card" style="background-image: url('../images/marisa_2x.webp');background-size: cover;margin-bottom: 10em">
   <div class="card-content">
     <p class="title"><%= t(:title) %></p>
-    <a class="card-link" href="../<= %link_locale %>profile"><i class="fas fa-user"></i>&ensp;<%= t(:profile) %></a>
+    <a class="card-link" href="../profile"><i class="fas fa-user"></i>&ensp;<%= t(:profile) %></a>
 </div>
 </div>
