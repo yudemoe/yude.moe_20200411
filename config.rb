@@ -9,7 +9,6 @@ end
  activate :directory_indexes
  activate :i18n,
  :mount_at_root => :ja
-
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 

@@ -1,6 +1,6 @@
 ---
 ja:
- title: "yude.moe へようこそ 👊"
+ title: "yude.moe&ensp;へようこそ 👊"
  home: "ホーム"
  hosting: "ホスト中"
  donate: "寄付"
@@ -17,7 +17,7 @@ ja:
  mutual_links_description_2: " までご連絡ください。"
  banners: "サイトバナー"
  copy: "コピー"
- about: "yude.moe について"
+ about: "yude.moe&ensp;について"
  special_thanks: "スペシャルサンクス"
  assets: "素材"
  tech: "技術"
@@ -28,3 +28,6 @@ ja:
  contact: "連絡先"
  misc: "その他"
  profile: "プロフィール"
+ birthday: "2001年11月19日"
+ location: "日本&ensp;鳥取県"
+ path: ""

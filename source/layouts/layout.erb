@@ -1,155 +1,37 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><%= page_title current_page %> ・ yude.moe</title>
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto+Mono&display=swap" rel="stylesheet"
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title><%= page_title current_page %> ・ yude.moe</title>
+  <link rel="shortcut icon" href="../images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto+Mono&display=swap" rel="stylesheet"
     media="print" onload="this.media='all'" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css"
-        integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print"
-        onload="this.media='all'" />
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css" integrity="sha256-D9M5yrVDqFlla7nlELDaYZIpXfFWDytQtiV+TaH6F1I=" crossorigin="anonymous" />
-        <style>
-    @font-face {
-            font-family: 'Font Awesome 5 Brands';
-            font-style: normal;
-            font-weight: 400;
-            src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-brands-400.woff2") format("woff2");
-            font-display: swap;
-        }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css"
+    integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print"
+    onload="this.media='all'" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css"
+    integrity="sha256-D9M5yrVDqFlla7nlELDaYZIpXfFWDytQtiV+TaH6F1I=" crossorigin="anonymous" />
+  <%= partial 'modules/style' %>
+</head>
 
-        @font-face {
-            font-family: 'Font Awesome 5 Free';
-            font-style: normal;
-            font-weight: 900;
-            src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-solid-900.woff2") format("woff2");
-            font-display: swap;
-        }
-            body {
-                color: white;width:100%;text-align:center;
-            }
-            body,code{font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Roboto Mono', "Noto Sans JP";}
-            html{background-color: hsl(0, 0%, 4%);}
-            a{color: white}
-            .wrap{
-                width: 90%;
-                margin:0 auto;
-                text-align:left
-            }
-            .card-link{color: black}
-            @keyframes r1 {
-  0%   { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-.has-image-centered {
-  margin-left: auto;
-  margin-right: auto;
-}
-    </style>
-  </head>
-  <body>
+<body>
   <div class="wrap">
-
-  <nav class="navbar is-black" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a href="../<%= locale %>" class="navbar-item">
-      <i class="fas fa-home"></i>&ensp;<%= t(:home) %>
-      </a>
-
-      
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-        <i class="fas fa-server"></i>&ensp;<%= t(:hosting) %>
-        </a>
-        <div class="navbar-dropdown">
-          <a href="https://git.yude.moe" class="navbar-item">
-          <i class="fab fa-git"></i>&ensp;Gogs - Git
-          </a>
-          <a href="https://s.yude.moe" class="navbar-item">
-          <i class="fas fa-cut"></i>&ensp;Lstu - URL <%= t(:shorten) %>
-          </a>
-          <a href="https://paste.yude.moe" class="navbar-item">
-          <i class="fab fa-clipboard"></i>&ensp;µPaste - <%= t(:text_sharing) %>
-          </a>
-          <a href="https://md.yude.moe" class="navbar-item">
-          <i class="fab fa-markdown"></i>&ensp;CodiMD - Markdown <%= t(:sharing) %>
-          </a>
-          <a href="https://cloud.yude.moe" class="navbar-item">
-          <i class="fas fa-cloud"></i>&ensp;Nextcloud - <%= t(:file_sharing) %>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="navbar-end">
-    <a href="../<%= locale %>donate" class="navbar-item" style="color:white">
-    <i class="fas fa-heart"></i>&ensp;<%= t(:donate) %>
-  </a>
-  <div class="navbar-item has-dropdown is-hoverable">
-  <a class="navbar-link">
-  <i class="fas fa-language"></i>&ensp;Language
-  </a>
-  <div class="navbar-dropdown">
-    <a id="lang_ja" href="#" class="navbar-item">
-    日本語
-    </a>
-    <a id="lang_en" href="#" class="navbar-item">
-    English
-    </a>
-  </div>
-    </div>
-  </div>
-</nav>
+    <%= partial 'modules/navbar' %>
     <%= yield %>
-    <p style="text-align: center">Made by yude. ・ <a style="text-decoration:none" href="../<%= locale %>about"><%= t(:about) %></a></p>
-    </div>
-    <script>
-    if (location.pathname.includes("en")){
-    document.getElementById('lang_ja').href = ".."+location.pathname.replace("en/","")
-  }else{
-    document.getElementById('lang_en').href = "../en"+location.pathname
-  }
-    </script>
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
+    <p style="text-align: center">Made by yude. ・ <a style="text-decoration:none"
+        href="../<%= t(:path) %>about"><%= t(:about) %></a></p>
+  </div>
+  <script>
+    if (location.pathname.includes("en")) {
+      document.getElementById('lang_ja').href = ".." + location.pathname.replace("en/", "")
+    } else {
+      document.getElementById('lang_en').href = "../en" + location.pathname
+    }
+  </script>
+  <%= partial 'modules/hamburger' %>
+</body>
 
-  // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-  // Check if there are any navbar burgers
-  if ($navbarBurgers.length > 0) {
-
-    // Add a click event on each of them
-    $navbarBurgers.forEach( el => {
-      el.addEventListener('click', () => {
-
-        // Get the target from the "data-target" attribute
-        const target = el.dataset.target;
-        const $target = document.getElementById(target);
-
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-
-      });
-    });
-  }
-});
-</script>
-    </body>
 </html>

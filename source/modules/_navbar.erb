@@ -1,0 +1,56 @@
+<nav class="navbar is-black" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a href="../<%= t(:path) %>" class="navbar-item">
+                <i class="fas fa-home"></i>&ensp;<%= t(:home) %>
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    <i class="fas fa-server"></i>&ensp;<%= t(:hosting) %>
+                </a>
+                <div class="navbar-dropdown">
+                    <a href="https://git.yude.moe" class="navbar-item">
+                        <i class="fab fa-git"></i>&ensp;Gogs - Git
+                    </a>
+                    <a href="https://s.yude.moe" class="navbar-item">
+                        <i class="fas fa-cut"></i>&ensp;Lstu - URL <%= t(:shorten) %>
+                    </a>
+                    <a href="https://paste.yude.moe" class="navbar-item">
+                        <i class="fab fa-clipboard"></i>&ensp;µPaste - <%= t(:text_sharing) %>
+                    </a>
+                    <a href="https://md.yude.moe" class="navbar-item">
+                        <i class="fab fa-markdown"></i>&ensp;CodiMD - Markdown <%= t(:sharing) %>
+                    </a>
+                    <a href="https://cloud.yude.moe" class="navbar-item">
+                        <i class="fas fa-cloud"></i>&ensp;Nextcloud - <%= t(:file_sharing) %>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-end">
+            <a href="../<%= t(:path) %>donate" class="navbar-item" style="color:white">
+                <i class="fas fa-heart"></i>&ensp;<%= t(:donate) %>
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    <i class="fas fa-language"></i>&ensp;Language
+                </a>
+                <div class="navbar-dropdown">
+                    <a id="lang_ja" href="#" class="navbar-item">
+                        日本語
+                    </a>
+                    <a id="lang_en" href="#" class="navbar-item">
+                        English
+                    </a>
+                </div>
+            </div>
+        </div>
+</nav>

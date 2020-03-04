@@ -6,6 +6,6 @@ title:
 <div class="card" style="background-image: url('../images/marisa_2x.webp');background-size: cover;margin-bottom: 10em">
   <div class="card-content">
     <p class="title"><%= t(:title) %><%= current_page.url %></p>
-    <a class="card-link" href="../profile"><i class="fas fa-user"></i>&ensp;<%= t(:profile) %></a>
+    <%= partial 'modules/card-link' %>
 </div>
 </div>
