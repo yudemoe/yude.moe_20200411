@@ -3,8 +3,24 @@ title:
  en: 👤 About me
  ja: 👤 プロフィール
 ---
+<% content_for :stylesheet do %>
+.box_link {
+  width: 100px;
+  margin: 0;
+  display: inline-block;
+  text-align: center
+}
+@keyframes r1 {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+<% end %>
 <p class="is-size-2"><i class="fas fa-user"></i>&ensp;<%= t(:profile) %></p>
-<div class="card has-background-grey" style="margin-bottom:10px;margin-top:10px">
+<div class="card has-background-dark" style="margin-bottom:10px;margin-top:10px">
   <div class="card-content">
   <div class="columns">
   <div class="column is-two-fifth">
@@ -32,7 +48,381 @@ title:
 </div>
 </div>
 </div>
-<div class="card has-background-grey" style="margin-bottom:10px;margin-top:10px">
+<div class="card has-background-dark" style="margin-bottom:10px;margin-top:10px">
   <div class="card-content">
+  <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-twitter"></i></p>
+        <p><a href="//twitter.com/lucknetter">@lucknetter</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-twitter"></i></p>
+        <p><a href="//twitter.com/yudekey">@yudekey</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-twitter"></i></p>
+        <p><a href="//twitter.com/yudemoe">@yudemoe</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-twitch"></i></p>
+        <p><a href="//twitch.tv/yude1119">yude1119</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-instagram"></i></p>
+        <p><a href="//instagram.com/yudetex">yudetex</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-youtube"></i></p>
+        <p><a href="//www.youtube.com/c/yudete">c/yudete</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-tumblr"></i></p>
+        <p><a href="//blog.yude.moe">yudelog</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-mastodon"></i></p>
+        <p><a href="https://mstdn.jp/@yude">mstdn.jp/<br>@yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Disqus" src="../images/brand/peing.ico" height=30px width=30px>
+        <p><a href="https://peing.net/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Misskey" src="../images/brand/misskey.ico" height=30px width=30px>
+        </p>
+        <p><a href="https://misskey.io/@yude">@yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="プチリリ" src="../images/brand/petitlyrics.ico" height=30px width=30px>
+        </p>
+        <p><a href="https://petitlyrics.com/profile/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-lastfm"></i></p>
+        <p><a href="https://www.last.fm/ja/user/yude_stride">yude_stride</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-gitlab"></i></p>
+        <p><a href="https://gitlab.com/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="pixiv" src="../images/brand/pixiv.png" height=30px width=30px>
+        <p><a href="https://www.pixiv.net/member.php?id=17036889">yude (17036889)</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-spotify"></i></p>
+        <p><a href="https://open.spotify.com/user/yude1119?si=mkpe_gHjSjatWcstDWkKbQ">yude1119</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Annict" src="../images/brand/annict.png" height=30px width=30px>
+        <p><a href="https://annict.com/@yude">@yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Coderwall" src="../images/brand/coderwall.png" height=30px width=30px>
+        </p>
+        <p><a href="https://coderwall.com/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="ブクログ" src="../images/brand/booklog.ico" height=30px width=30px>
+        <p><a href="https://booklog.jp/users/yudetex/">yudetex</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Dailymotion" src="../images/brand/dailymotion.png" height=30px width=30px>
+        <p><a href="https://www.dailymotion.com/yude_point">yude_point</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Disqus" src="../images/brand/disqus.png" height=30px width=30px>
+        <p><a href="https://disqus.com/by/yudete/">yudete</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="gab" src="../images/brand/gab.png" height=30px width=30px>
+        <p><a href="https://gab.com/yude">@yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="kitsu.io" src="../images/brand/kitsuio.png" height=30px width=30px>
+        </p>
+        <p><a href="https://kitsu.io/users/387191">yude (387191)</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="MyAnimeList" src="../images/brand/mal.ico" height=30px width=30px>
+        </p>
+        <p><a href="https://myanimelist.net/profile/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="plug.dj" src="../images/brand/plugdj.png" height=30px width=30px>
+        <p><a href="https://plug.dj/@/yudecchi">yudecchi</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Plays.tv" src="../images/brand/playstv.png" height=30px width=30px>
+        </p>
+        <p><a href="https://plays.tv/u/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-foursquare"></i></p>
+        <p><a href="https://ja.foursquare.com/yudete">yudete</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="はてな" src="../images/brand/hatena.ico" height=30px width=30px>
+        <p><a href="http://profile.hatena.ne.jp/yudetex/">yudetex</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Qiita" src="../images/brand/qiita.ico" height=30px width=30px>
+        <p><a href="https://qiita.com/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-wikipedia-w"></i></p>
+        <p><a href="https://ja.wikipedia.org/wiki/%E5%88%A9%E7%94%A8%E8%80%85:Yude1119">Yude1119</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Fuwanovel" src="../images/brand/fuwanovel.ico" height=30px width=30px>
+        </p>
+        <p><a href="https://forums.fuwanovel.net/profile/25537-yude1119/">yude1119 (25537)</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Fuwanovel" src="../images/brand/shinchoku_note.ico" height=30px width=30px>
+        <p><a href="https://shinchoku.net/users/yudete">yudete</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="NameMC" src="../images/brand/namemc.png" height=30px width=30px>
+        <p><a href="https://ja.namemc.com/profile/yude.1">yude</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-itch-io"></i></p>
+        <p><a href="https://yude.itch.io/">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Aeria Games" src="../images/brand/aeria.ico" height=30px width=30px>
+        </p>
+        <p><a href="https://www.aeriagames.com/user/yudetex/">yudetex</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-codepen"></i></p>
+        <p><a href="https://codepen.io/yude/">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Greasyfork" src="../images/brand/greasyfork.webp" height=30px width=30px>
+        </p>
+        <p><a href="https://greasyfork.org/ja/users/217626-yude">yude (217626)</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Crowdin" src="../images/brand/crowdin.png" height=30px width=30px>
+        </p>
+        <p><a href="https://crowdin.com/profile/yudecchi">yudecchi</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-npm"></i></p>
+        <p><a href="https://www.npmjs.com/~yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="WakaTime" src="../images/brand/wakatime.png" height=30px width=30px>
+        </p>
+        <p><a href="https://wakatime.com/@yude">@yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Togetter" src="../images/brand/togetter.png" height=30px width=30px>
+        </p>
+        <p><a href="https://togetter.com/id/yudete">yudete</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-speaker-deck"></i></p>
+        <p><a href="https://speakerdeck.com/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-stack-overflow"></i></p>
+        <p><a href="https://stackoverflow.com/users/11435653/yude">yude (11435653)</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="フォト蔵" src="../images/brand/photozou.ico" height=30px width=30px>
+        <p><a href="http://photozou.jp/user/top/3240087">yude (3240087)</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Myspace" src="../images/brand/myspace.png" height=30px width=30px>
+        </p>
+        <p><a href="https://myspace.com/yudetex">yudetex</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="TINAMI" src="../images/brand/tinami.png" height=30px width=30px>
+        <p><a href="http://www.tinami.com/profile/349313">yude (349313)</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="ATND" src="../images/brand/atnd.ico" height=30px width=30px>
+        <p><a href="https://atnd.org/users/330315">yude (330315)</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="ASKfm" src="../images/brand/askfm.png" height=30px width=30px>
+        <p><a href="https://ask.fm/yude_point">yude_point</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="goodreads" src="../images/brand/goodreads.png" height=30px width=30px>
+        </p>
+        <p><a href="https://www.goodreads.com/user/show/96709284-yude">yude (96709284)</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Chocolatey" src="../images/brand/chocolatey.ico" height=30px width=30px>
+        </p>
+        <p><a href="https://chocolatey.org/profiles/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Twilog" src="../images/brand/twilog.png" height=30px width=30px>
+        <p><a href="https://twilog.org/yudete">yudete</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-reddit-alien"></i></p>
+        <p><a href="https://www.reddit.com/user/yude1119">yude1119</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-vimeo-v"></i></p>
+        <p><a href="https://vimeo.com/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="AtCoder" src="../images/brand/atcoder.png" height=30px width=30px>
+        </p>
+        <p><a href="https://atcoder.jp/users/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-evernote"></i></p>
+        <p><a href="https://discussion.evernote.com/profile/413460-yude/">yude (413460)</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="niconico" src="../images/brand/niconico.png" height=30px width=30px>
+        </p>
+        <p><a href="https://www.nicovideo.jp/user/22932031">yude (22932031)</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Gravatar" src="../images/brand/gravatar.ico" height=30px width=30px>
+        </p>
+        <p><a href="https://ja.gravatar.com/yudete">yudete</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="note" src="../images/brand/note.png" height=30px width=30px>
+        <p><a href="https://note.mu/yude1119">yude1119</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="SUZURI" src="../images/brand/suzuri.png" height=30px width=30px>
+        <p><a href="https://suzuri.jp/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Libre.fm" src="../images/brand/librefm.png" height=30px width=30px>
+        </p>
+        <p><a href="https://libre.fm/user/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Imgur" src="../images/brand/imgur.png" height=30px width=30px>
+        <p><a href="https://imgur.com/user/yude1119/posts">yude1119</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Mixer" src="../images/brand/mixer.png" height=30px width=30px>
+        <p><a href="https://mixer.com/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="ふわっち" src="../images/brand/whowatch.ico" height=30px width=30px>
+        <p><a href="https://whowatch.tv/profile/w:yude">w:yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="カクヨム" src="../images/brand/kakuyomu.png" height=30px width=30px>
+        <p><a href="https://kakuyomu.jp/users/yudetex">yudetex</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="小説家になろう" src="../images/brand/narou.ico" height=30px width=30px>
+        <p><a href="https://mypage.syosetu.com/1084596/">yude (1084596)</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="RESUME" src="../images/brand/resume.png" height=30px width=30px>
+        <p><a href="https://www.resume.id/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Sketchfab" src="../images/brand/sketchfab.png" height=30px width=30px>
+        </p>
+        <p><a href="https://sketchfab.com/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="KnowYourMeme" src="../images/brand/knowyourmeme.jpg" height=30px width=30px>
+        <p><a href="https://knowyourmeme.com/users/yude1119">yude1119</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="bilibili" src="../images/brand/bilibili.ico" height=30px width=30px>
+        </p>
+        <p><a href="https://space.bilibili.com/446089772">yudetex (446089772)</a></p>
+      </div>
+      <div class="box_link">
+        <p><i class="is-size-3 has-text-light fab fa-mastodon"></i></p>
+        <p><a href="https://mast.moe/@yude">mast.moe/<br>@yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="ニジエ" src=" ../images/brand/nijie.png" height=30px width=30px>
+        <p><a href="https://nijie.info/members.php?id=1390736">yude (1390736)</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Smashcast" src=" ../images/brand/smashcast.png" height=30px width=30px>
+        </p>
+        <p><a href="https://www.smashcast.tv/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Irori" src=" ../images/brand/irori.svg" height=30px width=30px>
+        <p><a href="https://irori.app/@yude">@yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Iwara" src=" ../images/brand/iwara.ico" height=30px width=30px>
+        <p><a href="https://www.iwara.tv/users/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Chordify" src=" ../images/brand/chordify.webp" height=30px width=30px>
+        </p>
+        <p><a href="https://chordify.net/profile/5d57fef4786de0450000db60">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Broadwise" src=" ../images/brand/broadwise.png" height=30px width=30px>
+        </p>
+        <p><a href="https://broadwise.org/u/yude/">@yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Webwide" src=" ../images/brand/webwide.png" height=30px width=30px>
+        </p>
+        <p><a href="https://webwide.io/members/yude.1568/">yude (1568)</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Webwide" src=" ../images/brand/webwide.png" height=30px width=30px>
+        </p>
+        <p><a href="https://webwide.io/members/yude.1568/">yude (1568)</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Side Projects" src=" ../images/brand/sideprojects.png" height=30px width=30px>
+        </p>
+        <p><a href="https://sideprojects.net/@yude">@yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="ProductHunt" src=" ../images/brand/producthunt.ico" height=30px width=30px>
+        </p>
+        <p><a href="https://www.producthunt.com/@yudete">@yudete</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Indie Hackers" src=" ../images/brand/indiehackers.png" height=30px width=30px>
+        </p>
+        <p><a href="https://www.indiehackers.com/yude">yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Makerlog" src=" ../images/brand/makerlog.png" height=30px width=30px>
+        </p>
+        <p><a href="https://getmakerlog.com/@yude">@yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Dribbble" src=" ../images/brand/dribbble.png" height=30px width=30px>
+        </p>
+        <p><a href="https://dribbble.com/yudete">yudete</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Cent" src=" ../images/brand/cent.png" height=30px width=30px>
+        </p>
+        <p><a href="https://beta.cent.co/@yude">@yude</a></p>
+      </div>
+      <div class="box_link">
+        <img alt="Minds" src=" ../images/brand/minds.svg" height=30px width=30px>
+        </p>
+        <p><a href="https://www.minds.com/yude">yude</a></p>
+      </div>
   </div>
 </div>
+<div class="card has-background-dark" style="margin-bottom:10px;margin-top:10px">
+  <div class="card-content">
+
+  </div>
+  </div>

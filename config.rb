@@ -6,6 +6,7 @@ activate :autoprefixer do |prefix|
 end
  activate :minify_css
  activate :minify_javascript
+ activate :asset_hash
  activate :directory_indexes
  activate :i18n,
  :mount_at_root => :ja
