@@ -1,0 +1,7 @@
+<script>
+    if (location.pathname.includes("en")) {
+      document.getElementById('lang_ja').href = ".." + location.pathname.replace("en/", "")
+    } else {
+      document.getElementById('lang_en').href = "../en" + location.pathname
+    }
+  </script>

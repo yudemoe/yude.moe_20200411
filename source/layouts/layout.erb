@@ -1,38 +1,13 @@
 <!doctype html>
 <html lang="ja">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title><%= page_title current_page %> ・ yude.moe</title>
-  <link rel="shortcut icon" href="../images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto+Mono&display=swap" rel="stylesheet"
-    media="print" onload="this.media='all'" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css"
-    integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print"
-    onload="this.media='all'" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css"
-    integrity="sha256-D9M5yrVDqFlla7nlELDaYZIpXfFWDytQtiV+TaH6F1I=" crossorigin="anonymous" />
-  <%= partial 'modules/style' %>
-
-</head>
-
+<%= partial 'modules/head' %>
 <body>
   <div class="wrap">
     <%= partial 'modules/navbar' %>
     <%= yield %>
-    <p style="text-align: center">Made by yude. ・ <a style="text-decoration:none"
-        href="../<%= t(:path) %>about"><%= t(:about) %></a></p>
+    <%= partial 'modules/footer' %>
   </div>
-  <script>
-    if (location.pathname.includes("en")) {
-      document.getElementById('lang_ja').href = ".." + location.pathname.replace("en/", "")
-    } else {
-      document.getElementById('lang_en').href = "../en" + location.pathname
-    }
-  </script>
+  <%= partial 'modules/lang' %>
   <%= partial 'modules/hamburger' %>
 </body>
-
 </html>
