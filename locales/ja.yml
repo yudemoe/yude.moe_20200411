@@ -1,6 +1,6 @@
 ---
 ja:
- title: "yude.moe&ensp;へようこそ 👊"
+ welcome: "yude.moe へようこそ。"
  home: "ホーム"
  hosting: "ホスト中"
  donate: "寄付"
@@ -30,4 +30,8 @@ ja:
  profile: "プロフィール"
  birthday: "2001年11月19日"
  location: "日本&ensp;鳥取県"
+ games: "ゲーム"
+ web_services: "Web サービス"
+ lucknetter_desc: "Minecraft サーバー Luck Network の情報発信/収集用アカウント"
+ yudekey_desc: "就寝報告やFF外からの目を気にしないためのアカウント"
  path: ""
