@@ -58,4 +58,4 @@ en:
  minecraft_guide_1_desc: "Right click the downloaded file and click [Run with PowerShell] ."
  minecraft_guide_2: "When you see 「接続しました！」, you can open up Minecraft and connect to the server."
  minecraft_guide_2_desc: "Server address is localhost. I'm not joking."
- 
+ multiplay: "Multiplay"
