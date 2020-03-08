@@ -58,3 +58,7 @@ ja:
  minecraft_guide_2: "しばらく待ち、「接続しました！」と表示されたら、Minecraft内でサーバーに接続する"
  minecraft_guide_2_desc: "サーバーアドレスは、 localhost で大丈夫です。"
  multiplay: "マルチプレイ"
+ played_games: "プレイしたことのあるゲーム"
+ no_platform: "分類なし"
+ visual_novels: "ノベルゲーム"
+ qualification: "資格"

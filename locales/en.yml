@@ -59,3 +59,7 @@ en:
  minecraft_guide_2: "When you see 「接続しました！」, you can open up Minecraft and connect to the server."
  minecraft_guide_2_desc: "Server address is localhost. I'm not joking."
  multiplay: "Multiplay"
+ played_games: "Played games"
+ no_platform: "No Platform"
+ visual_novels: "Visual Novels"
+ qualification: "Ceritification"
