@@ -62,3 +62,4 @@ ja:
  no_platform: "分類なし"
  visual_novels: "ノベルゲーム"
  qualification: "資格"
+ firewall: "初回起動をする際にファイアウォールを許可する必要があるかもしれません。"
