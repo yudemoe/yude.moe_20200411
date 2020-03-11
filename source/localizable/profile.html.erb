@@ -13,34 +13,100 @@ title:
   }
   }
   <% end %>
+  <% content_for :script do %>
+    <!-- discord status -->
+    <script await>
+    var req = new XMLHttpRequest();
+    req.open('GET', 'https://yude.glitch.me', true);
+    req.onload = function () {
+      var status = this.response;
+      if (status == "online") {
+        var color = '#43b581'
+      }
+      if (status == "idle") {
+        var color = '#faa61a'
+      }
+      if (status == "dnd") {
+        var color = '#f04747'
+      }
+      if (status == "offline") {
+        var color = '#747f8d'
+      }
+      var str = document.getElementById("discord").innerHTML;
+      str = str.replace(
+        '<i class="fas fa-spinner fa-pulse"></i>',
+        '<i style="color: ' + color + '" class="fab fa-discord"></i>');
+        str = str.replace(
+        '<span class="sr-only">Loading...</span></span>',
+        '');
+      document.getElementById("discord").innerHTML = str;
+      console.log("Got Discord status: "+status+" and color is "+color+" .")
+    }
+    req.send();
+  </script>
+    <% end %>
 <p class="is-size-2"><i class="fas fa-user"></i>&ensp;<%= t(:profile) %></p>
-<div class="card has-background-dark" style="margin-bottom:10px;margin-top:10px">
+<div class="card has-background-dark" style="margin-top: 10px; margin-bottom: 10px">
   <div class="card-content">
-    <div class="columns">
-      <div class="column is-two-fifth">
-        <div class="columns">
-          <div class="column is-one-fifth">
-            <p class="image">
-              <img class="is-rounded has-image-centered" src="../images/mel-full.jpg"
-                style="animation: r1 5s linear infinite;min-width:64px;max-width:128px">
-            </p>
-          </div>
-          <div class="column">
-            <p class="has-text-light is-size-3">yude</p>
-            <p class="has-text-light is-size-5"><i class="fas fa-birthday-cake"></i>&ensp;<%= t(:birthday) %></p>
-            <p class="has-text-light is-size-5"><i class="fas fa-map-marker-alt"></i>&ensp;<%= t(:location) %></p>
-          </div>
-        </div>
-      </div>
-      <div class="column has-text-light">
-        <p class="is-size-5"><i class="fab fa-discord"></i>&ensp;yude#3205</p>
-        <p class="is-size-5"><i class="fab fa-twitter"></i>&ensp;<a href="https://twitter.com/yudete">@yudete</a></p>
-        <p class="is-size-5"><i class="fab fa-github"></i>&ensp;<a href="https://github.com/yudete">yudete</a></p>
-        <p class="is-size-5"><i class="fab fa-steam"></i>&ensp;<a href="//steamcommunity.com/id/yudepoi">yudepoi</a></p>
-        <p class="is-size-5"><i class="far fa-envelope"></i>&ensp;<a href="mailto:yu@yude.moe">yu@yude.moe</a></p>
-        <p class="is-size-5"><i class="fab fa-keybase"></i>&ensp;<a href="https://keybase.io/yude">yude</a></p>
-        <p class="is-size-5"><a href="../<%= t(:path) %>more">more...</a></p>
-      </div>
-    </div>
+  
+  <div class="columns is-mobile is-multiline is-centered">
+  <div class="column is-narrow">
+  <p class="image"><img class="is-rounded has-image-centered" src="../images/mel-full.jpg" style="animation: r1 5s linear infinite;min-width:64px;max-width:128px"></p>
+  </div>
+  <div class="column is-narrow">
+    <p class="has-text-light is-size-3 is-centered">yude</p>
+    <p class="has-text-light is-size-5"><i class="fas fa-birthday-cake"></i>&ensp;<%= t(:birthday) %></p>
+    <p class="has-text-light is-size-5"><i class="fas fa-map-marker-alt"></i>&ensp;<%= t(:location) %></p>
+  </div>
   </div>
 </div>
+                
+            
+<div class="is-divider"></div>
+<div class="has-text-centered">
+<nav class="level is-centered">
+  <div class="level-item has-text-centered">
+    <div>
+    <p id="discord" class="is-size-2"><i class="fas fa-spinner fa-pulse"></i></p>
+    <p class="is-size-5 has-text-white">yude#3205</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+    <p class="is-size-2"><i class="fab fa-twitter has-text-info"></i></p>
+    <p class="is-size-5"><a href="https://twitter.com/yudete">@yudete</a></p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+    <p class="is-size-2"><i class="fab fa-github has-text-grey-light"></i></p>
+    <p class="is-size-5"><a href="https://github.com/yudete">yudete</a></p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+    <p class="is-size-2"><i class="fab fa-steam has-text-link"></i></p>
+    <p class="is-size-5"><a href="//steamcommunity.com/id/yudepoi">yudepoi</a></p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+    <p class="is-size-2"><i class="far fa-envelope has-text-primary"></i></p>
+    <p class="is-size-5"><a href="mailto:yu@yude.moe">yu@yude.moe</a></p>
+    </div>
+    </div>
+    <div class="level-item has-text-centered">
+    <div>
+    <p class="is-size-2"><i class="fab fa-keybase has-text-danger"></i></p>
+    <p class="is-size-5"><a href="https://keybase.io/yude">yude</a></p>
+    </div>
+    </div>
+    <div class="level-item has-text-centered">
+    <div>
+    </div>
+    </div>
+</nav>
+        <p class="is-size-5 has-text-white">and&ensp;<a href="../<%= t(:path) %>more">more...</a></p>
+      </div>
+    </div>
+    </div>
