@@ -5,3 +5,4 @@
 build/
 .vs
 Gemfile.lock
+/Gemfile.lock
