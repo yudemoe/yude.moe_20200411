@@ -7,28 +7,6 @@
             <span aria-hidden="true"></span>
         </a>
     </div>
-    <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-            <a href="../<%= t(:path) %>" class="navbar-item">
-                <i class="fas fa-home"></i>&ensp;<%= t(:home) %>
-            </a>
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
-                    <i class="fas fa-server"></i>&ensp;<%= t(:hosting) %>
-                </a>
-                <div class="navbar-dropdown">
-                    <a href="https://git.yude.moe" class="navbar-item">
-                        <i class="fab fa-git"></i>&ensp;Gogs - Git
-                    </a>
-                    <a href="https://paste.yude.moe" class="navbar-item">
-                        <i class="fab fa-clipboard"></i>&ensp;µPaste - <%= t(:text_sharing) %>
-                    </a>
-                    <a href="https://cloud.yude.moe" class="navbar-item">
-                        <i class="fas fa-cloud"></i>&ensp;Nextcloud - <%= t(:file_sharing) %>
-                    </a>
-                </div>
-            </div>
-        </div>
         <div class="navbar-end">
             <a href="../<%= t(:path) %>donate" class="navbar-item" style="color:white">
                 <i class="fas fa-heart"></i>&ensp;<%= t(:donate) %>
